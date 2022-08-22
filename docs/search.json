@@ -14,6 +14,13 @@
     "text": "Temario\n\nConjuntos y relaciones\nAnálisis Real\nCálculo Diferencial\nConjuntos Convexos y teoremas de separación\nFunciones Cóncavas\nOptimización\n\nTemario extenso"
   },
   {
+    "objectID": "index.html#referencias",
+    "href": "index.html#referencias",
+    "title": "CIDE - Matemáticas",
+    "section": "Referencias",
+    "text": "Referencias\n[AM] Andreu Mas-Colell, Michael D. Whinston and Jerry R. Green (1995), Microeconomic Theory. Oxford University Press\n[AF] Angel de la Fuente (2000), Mathematical Methods and Models for Economists. Cambridge University Press.\n[RV] Rakesh V. Vohra (2005), Advanced Mathematical Economics. Routledge.\n[KD] Kaniska Dam. Notas de clase. Enlace"
+  },
+  {
     "objectID": "index.html#evaluación",
     "href": "index.html#evaluación",
     "title": "CIDE - Matemáticas",
@@ -35,38 +42,52 @@
     "text": "Calendario"
   },
   {
+    "objectID": "Sitios.html",
+    "href": "Sitios.html",
+    "title": "Sitios de interés",
+    "section": "",
+    "text": "Los siguientes enlaces pueden servir como apoyo al para estudiar lso temas del curso."
+  },
+  {
+    "objectID": "Sitios.html#cursos",
+    "href": "Sitios.html#cursos",
+    "title": "Sitios de interés",
+    "section": "Cursos",
+    "text": "Cursos\n\nAnalysis I\nAnalysis II\nConvex analysis and optimization\nMicroeconomic Theory I"
+  },
+  {
+    "objectID": "Sitios.html#libros",
+    "href": "Sitios.html#libros",
+    "title": "Sitios de interés",
+    "section": "Libros",
+    "text": "Libros\n\nCálculo infinitesimal de varias variables reales\nAnálisis matemático"
+  },
+  {
     "objectID": "Laboratorios/Lab1.html",
     "href": "Laboratorios/Lab1.html",
     "title": "Laboratorio 1",
     "section": "",
-    "text": "Important\n\n\n\nClasses are virtual this week. Find Zoom links here."
+    "text": "Se describe el contenido del laboratorio. Es importante realizar el trabajo previo aunque este no tenga ponderación en la calificación."
   },
   {
-    "objectID": "Laboratorios/Lab1.html#prepare",
-    "href": "Laboratorios/Lab1.html#prepare",
+    "objectID": "Laboratorios/Lab1.html#trabajo-previo",
+    "href": "Laboratorios/Lab1.html#trabajo-previo",
     "title": "Laboratorio 1",
-    "section": "Prepare",
-    "text": "Prepare\n📖 Read the [syllabus]\n📖 Read the [support]"
+    "section": "Trabajo previo",
+    "text": "Trabajo previo\n📖 Leer CHAPTER 1: Sets and Relations y realizar un resumen o algun tipo de nota (mapa mental, mapa conceptual, etc.). No se entrega ningún tipo de evidencia."
   },
   {
-    "objectID": "Laboratorios/Lab1.html#participate",
-    "href": "Laboratorios/Lab1.html#participate",
+    "objectID": "Laboratorios/Lab1.html#notas",
+    "href": "Laboratorios/Lab1.html#notas",
     "title": "Laboratorio 1",
-    "section": "Participate",
-    "text": "Participate\n🖥️ [Lab 0 -]\n🖥️ [Lecture 1 - Welcome to STA 210]"
+    "section": "Notas",
+    "text": "Notas"
   },
   {
-    "objectID": "Laboratorios/Lab1.html#practice",
-    "href": "Laboratorios/Lab1.html#practice",
+    "objectID": "Laboratorios/Lab1.html#códigos",
+    "href": "Laboratorios/Lab1.html#códigos",
     "title": "Laboratorio 1",
-    "section": "Practice",
-    "text": "Practice\n📋 [AE 0 - Movies]"
-  },
-  {
-    "objectID": "Laboratorios/Lab1.html#perform",
-    "href": "Laboratorios/Lab1.html#perform",
-    "title": "Laboratorio 1",
-    "section": "Perform",
-    "text": "Perform\n⌨️ [Lab 0 - Meet + greet]\n\n\nBack to course schedule ⏎"
+    "section": "Códigos",
+    "text": "Códigos\n🖥\n\nlibrary(plot3D)\nlibrary(plotly)\n\nGráfica lineal\n\nM <- mesh(seq(-1, 6*pi, length.out = 50),seq(0, pi, length.out = 50))\nx <- M$x\ny <- M$y\n\nalpha_1 <- 0.25\nalpha_2 <- 0.75\n\nz <- alpha_1 * x +  alpha_2 * y\n\n#surf3D(x, y, z, colvar = z, colkey = TRUE, \n#       box = TRUE, bty = \"b\", phi = 20, theta = 120)\n\nfig <- plot_ly(x = x, y = y, z = z) %>% add_surface()\n\nfig\n\n\n\n\n\nGráfica Cobb-Douglas\n\nM <- mesh(seq(0.01, pi, length.out = 50),seq(0.01, pi, length.out = 50))\nx <- M$x\ny <- M$y\n\nA <- 1\nalpha_1 <- 0.5\nalpha_2 <- 0.5\n\nz <- A *  x ^ alpha_1 * y ^ alpha_2\n\nfig <- plot_ly(x = x, y = y, z = z) %>% add_surface()\n\nfig\n\n\n\n\n\nGráfica de Leontief\n\nM <- mesh(seq(0, 10, length.out = 50),seq(0.0, 10, length.out = 50))\nx <- M$x\ny <- M$y\n\nalpha_1 <- 1\nalpha_2 <- 1\n\nz <- pmin(alpha_1 * x, alpha_2 * y)\n\nfig <- plot_ly(x = x, y = y, z = z) %>% add_surface()\n\nfig\n\n\n\n\n\nGráfica de elasticidad constante de sustitución\n\nM <- mesh(seq(0, 10, length.out = 50),seq(0.0, 10, length.out = 50))\nx <- M$x\ny <- M$y\n\nA <- 1\nalpha_1 <- 1\nalpha_2 <- 1\nrho <- 0.5\n\nz <- A * (alpha_1 * x ^ (-rho) + alpha_2 * y ^ (-rho)) ^ (-1/rho)\n\nfig <- plot_ly(x = x, y = y, z = z) %>% add_surface()\n\nfig\n\n\n\n\n\nGráficas de nivel\n\n\n📋 ⌨️\n\n\nRegresar a página de inicio ⏎"
   }
 ]
