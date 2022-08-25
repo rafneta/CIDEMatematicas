@@ -1,27 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>www.google.com/Actividades/Act02.html</loc>
+    <lastmod>2022-08-25T13:45:50.581Z</lastmod>
+  </url>
+  <url>
     <loc>www.google.com/Actividades/Act01.html</loc>
-    <lastmod>2022-08-24T15:05:58.991Z</lastmod>
+    <lastmod>2022-08-25T13:45:51.096Z</lastmod>
   </url>
   <url>
     <loc>www.google.com/Problemas.html</loc>
-    <lastmod>2022-08-24T15:05:59.310Z</lastmod>
+    <lastmod>2022-08-25T13:45:51.325Z</lastmod>
   </url>
   <url>
     <loc>www.google.com/index.html</loc>
-    <lastmod>2022-08-24T15:05:59.623Z</lastmod>
+    <lastmod>2022-08-25T13:45:51.670Z</lastmod>
   </url>
   <url>
     <loc>www.google.com/Sitios.html</loc>
-    <lastmod>2022-08-24T15:05:59.852Z</lastmod>
+    <lastmod>2022-08-25T13:45:51.917Z</lastmod>
   </url>
   <url>
     <loc>www.google.com/Laboratorios/Lab1.html</loc>
-    <lastmod>2022-08-24T15:06:01.806Z</lastmod>
+    <lastmod>2022-08-25T13:45:52.554Z</lastmod>
   </url>
   <url>
     <loc>www.google.com/Laboratorios/Lab2.html</loc>
-    <lastmod>2022-08-24T15:06:02.052Z</lastmod>
+    <lastmod>2022-08-25T13:45:52.813Z</lastmod>
   </url>
 </urlset>
