@@ -11,14 +11,14 @@
     "href": "Actividades/Act03.html",
     "title": "Actividad 03",
     "section": "",
-    "text": "Objetivo: Realizar ejercicios sobre relaciones.\nTipo de trabajo: Equipos (dos o tres personas). Todos los integrantes entregan el mismo trabajo."
+    "text": "Objetivo: Realizar ejercicios sobre relaciones.\nTipo de trabajo: Equipos (dos o tres personas)."
   },
   {
-    "objectID": "Actividades/Act03.html#problema-1-30",
-    "href": "Actividades/Act03.html#problema-1-30",
+    "objectID": "Actividades/Act03.html#problema-1",
+    "href": "Actividades/Act03.html#problema-1",
     "title": "Actividad 03",
-    "section": "Problema 1 (30)",
-    "text": "Problema 1 (30)\nSea \\(R\\subset\\mathbb{Z}^2\\) definida como\n\\[R = \\left\\{\\left(x,y\\right)\\in\\mathbb{Z}^2\\middle| x\\geq y\\right\\}\\]\n1.1. ¿La relación es reflexiva?\n1.2 ¿La relación es simétrica?\n1.3 ¿La relación es anti-simétrica?\n1.4 ¿La relación es transitiva?\n1.5 ¿La relación es completa?\n1.6 Realiza la gráfica de la relación"
+    "section": "Problema 1",
+    "text": "Problema 1\nSea \\(R\\subset\\mathbb{Z}^2\\) definida como\n\\[R = \\left\\{\\left(x,y\\right)\\in\\mathbb{Z}^2\\middle| x\\geq y\\right\\}\\]\n1.1. ¿La relación es reflexiva?\n1.2 ¿La relación es simétrica?\n1.3 ¿La relación es anti-simétrica?\n1.4 ¿La relación es transitiva?\n1.5 ¿La relación es completa?\n1.6 Realiza la gráfica de la relación"
   },
   {
     "objectID": "Actividades/Act03.html#problema-2",
@@ -158,20 +158,13 @@
     "href": "Laboratorios/Lab2.html#trabajo-previo",
     "title": "Laboratorio 2",
     "section": "Trabajo previo",
-    "text": "Trabajo previo\nConcluir con la revisión de las notas\n📖 Leer CHAPTER 1: Sets and Relations y realizar un resumen o algun tipo de nota (mapa mental, mapa conceptual, etc.). No se entrega ningún tipo de evidencia.\n📖 Anotar las dudas (si existen) de las clases"
+    "text": "Trabajo previo\nConcluir con la revisión de las notas\n📖 Leer CHAPTER 1: Sets and Relations y realizar un resumen o algun tipo de nota (mapa mental, mapa conceptual, etc.). No se entrega ningún tipo de evidencia.\n📖 Anotar las dudas (si existen) de las clases previas a este laboratorio."
   },
   {
     "objectID": "Laboratorios/Lab2.html#notas",
     "href": "Laboratorios/Lab2.html#notas",
     "title": "Laboratorio 2",
     "section": "Notas",
-    "text": "Notas\n📋 Notas"
-  },
-  {
-    "objectID": "Laboratorios/Lab2.html#códigos",
-    "href": "Laboratorios/Lab2.html#códigos",
-    "title": "Laboratorio 2",
-    "section": "Códigos",
-    "text": "Códigos\n🖥\nGráficas de nivel\n\n\n\n\nRegresar a página de inicio ⏎"
+    "text": "Notas\n📋 Notas\n\n\nRegresar a página de inicio ⏎"
   }
 ]
