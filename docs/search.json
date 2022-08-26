@@ -7,6 +7,41 @@
     "text": "Objetivo: Realizar un curso básico de R para recordar/conocer la sintaxis.\nTipo de trabajo: Individual\n\nExiste bastante información para aprender R. Dependiendo de los objetivos que se persigan, unos recursos pueden ser mejores que otros. Para introducir/recordar R, trabajaras sobre el siguiente curso:\n\nR for Data Science\n\n\nInstrucciones de entrega\n\nGenera una cuenta en la plataforma del curso (en caso de ser necesario)\nInscribete al curso indicado\nRealiza las actividades hasta obtener el certificado.\nEntrega un enlace al certificado (puedes obtenerlo del QR que tiene tu certificado). Verifica que el enlace sea visible por externos."
   },
   {
+    "objectID": "Actividades/Act03.html",
+    "href": "Actividades/Act03.html",
+    "title": "Actividad 03",
+    "section": "",
+    "text": "Objetivo: Realizar ejercicios sobre relaciones.\nTipo de trabajo: Equipos (dos o tres personas). Todos los integrantes entregan el mismo trabajo."
+  },
+  {
+    "objectID": "Actividades/Act03.html#problema-1-30",
+    "href": "Actividades/Act03.html#problema-1-30",
+    "title": "Actividad 03",
+    "section": "Problema 1 (30)",
+    "text": "Problema 1 (30)\nSea \\(R\\subset\\mathbb{Z}^2\\) definida como\n\\[R = \\left\\{\\left(x,y\\right)\\in\\mathbb{Z}^2\\middle| x\\geq y\\right\\}\\]\n1.1. ¿La relación es reflexiva?\n1.2 ¿La relación es simétrica?\n1.3 ¿La relación es anti-simétrica?\n1.4 ¿La relación es transitiva?\n1.5 ¿La relación es completa?\n1.6 Realiza la gráfica de la relación"
+  },
+  {
+    "objectID": "Actividades/Act03.html#problema-2",
+    "href": "Actividades/Act03.html#problema-2",
+    "title": "Actividad 03",
+    "section": "Problema 2",
+    "text": "Problema 2\nResuelve el problema 1 de la Lista 1 (sección de Problemas)"
+  },
+  {
+    "objectID": "Actividades/Act03.html#problema-3",
+    "href": "Actividades/Act03.html#problema-3",
+    "title": "Actividad 03",
+    "section": "Problema 3",
+    "text": "Problema 3\nSea \\(R\\) una relación en \\(\\mathbb{R}^2\\) definida como\n\\[R = \\left\\{\\left((x_1,y_1),(x_2,y_2)\\right)\\in\\mathbb{R}^2\\times\\mathbb{R}^2\\middle| x_1<x_2\\mbox{ y } y_1\\geq y_2\\right\\}\\]\n3.1 ¿Por qué no es posible mostrar la geometría de \\(\\mathbb{R}^2\\times\\mathbb{R}^2\\)?\n3.2 Realiza la gráfica de los elementos relacionados con \\((1,2)\\)\n\nDefinición \n\nSea \\(R\\) una relación en \\(A\\). Se define la imagen de \\(x\\in A\\) bajo \\(R\\) como\n\\[\\operatorname{Im}(x)=\\left\\{y\\in A\\middle |(x,y)\\in R\\right\\}\\]\n\n\nBajo la definición anterior, en el ejercicio 3.2 se ha realizado la gráfica de la imagen de \\((1,2)\\) bajo la relación \\(R\\) en \\(\\mathbb{R}^2\\times\\mathbb{R}^2\\).\n3.3 Pensando en el siguiente dominio y contradominio \\(R:A\\longrightarrow A\\) ¿La relación \\(R\\) es una función ?\n3.4 Pensando en el siguiente dominio y contradominio \\(R:A\\longrightarrow \\mathscr{P}(A)\\)1 ¿La relación \\(R\\) es una función?\n3.5 Si la respuesta a 3.4 es sí. ¿Cuál es el nombre que recibe la relación R?\n3.6 Si la respuesta a 3.4 es sí. Discute sobre la imagen inversa superior de \\(W=\\{(0,0)\\}\\)\n3.7 Si la respuesta a 3.4 es sí. Discute sobre la imagen inversa inferior de \\(W=\\{(0,0)\\}\\)"
+  },
+  {
+    "objectID": "Actividades/Act03.html#instrucciones-de-entrega",
+    "href": "Actividades/Act03.html#instrucciones-de-entrega",
+    "title": "Actividad 03",
+    "section": "Instrucciones de entrega",
+    "text": "Instrucciones de entrega\nForma\n\nTodos los integrantes cargan el mismo trabajo\nEl formato de entrega es: problema-solución, en orden ascendente.\nSe anota el enunciado completo del problema\nEl formato de entrega es libre (imágenes, tablet, etc.).\nLa actividad debe ser desplegada en one-note. Si la actividad no es visible dentro de one-note, no se revisa.\n\nFondo\nLo ideal es entregar con notación matemática la solución de cada problema. Pero si aún se complica la notación, puedes redactar, pero siempre considera entregar la mayor notación posible."
+  },
+  {
     "objectID": "Actividades/Act01.html",
     "href": "Actividades/Act01.html",
     "title": "Actividad 01",
@@ -18,7 +53,7 @@
     "href": "Problemas.html",
     "title": "Problemas",
     "section": "",
-    "text": "Las siguientes listas son sugerencias de estudio.\n\nLista 1\nLista 2\nLista 3\nLista 4\nLista 5\nLista 6"
+    "text": "Las siguientes listas son sugerencias de estudio. Son tomadas de la bibliografía [KD]\n\nLista 1: Todos los problemas\nLista 2\nLista 3\nLista 4\nLista 5\nLista 6"
   },
   {
     "objectID": "index.html",
