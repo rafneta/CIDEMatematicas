@@ -70,6 +70,55 @@
     "text": "Instrucciones de entrega\nForma\n\nEl formato de entrega es: problema-solución, en orden ascendente.\nSe anota el enunciado completo del problema\nEl formato de entrega es libre (imágenes, tablet, etc.).\nLa actividad debe ser desplegada en one-note. Si la actividad no es visible dentro de one-note, no se revisa.\n\nFondo\nLo ideal es entregar con notación matemática la solución de cada problema. Pero si aún se complica la notación, puedes redactar, pero siempre considera entregar la mayor notación posible."
   },
   {
+    "objectID": "Actividades/Act05.html",
+    "href": "Actividades/Act05.html",
+    "title": "Actividad 05",
+    "section": "",
+    "text": "Objetivo: Realizar ejercicios sobre Tema 1 y Tema 2.\nTipo de trabajo: Equipos (dos o tres personas)."
+  },
+  {
+    "objectID": "Actividades/Act05.html#problema-1",
+    "href": "Actividades/Act05.html#problema-1",
+    "title": "Actividad 05",
+    "section": "Problema 1",
+    "text": "Problema 1\nResuelve el problema 4 de la Lista 1 (Sección de Problemas). Realiza las gráficas del inciso b) (Utiliza R)"
+  },
+  {
+    "objectID": "Actividades/Act05.html#problema-2",
+    "href": "Actividades/Act05.html#problema-2",
+    "title": "Actividad 05",
+    "section": "Problema 2",
+    "text": "Problema 2\n2.1 ¿Cuál es la forma general de la gráfica de una función \\(f:\\mathbb{R}\\longrightarrow\\mathbb{R}^2\\) ?\n2.2 Sea \\(f:\\mathbb{R}\\longrightarrow\\mathbb{R}^2\\) dada por\n\\[f(t) = (\\operatorname{sen}(t),\\cos(t))\\]\nRealiza la gráfica de \\(f\\) (utiliza R), para \\(t\\in[0,9]\\)"
+  },
+  {
+    "objectID": "Actividades/Act05.html#problema-3",
+    "href": "Actividades/Act05.html#problema-3",
+    "title": "Actividad 05",
+    "section": "Problema 3",
+    "text": "Problema 3\nSea \\(\\alpha>0\\). En \\((\\mathbb{R},|\\cdot|)\\), definamos la sucesión \\(\\left\\{x_n\\right\\}_{n \\geq 1} \\subseteq \\mathbb{R}\\) de la siguiente manera: \\(x_1>\\sqrt{\\alpha}\\) y\n\\[\nx_{n+1}=\\frac{1}{2}\\left(x_n+\\frac{\\alpha}{x_n}\\right)\n\\]\n\\(\\forall\\,n\\geq1\\)\n3.1 Utiliza los códigos del laboratorio 2 para construir gráficas de la sucesión (por lo menos 3 gráficas). Para cada gráfica elige los parámetros \\(\\alpha\\) y \\(x_1\\), de tal manera que ayuden a contestar las siguientes preguntas\n3.2 ¿La sucesión es creciente o decreciente?\n3.3 ¿La sucesión converge? De ser así, ¿cuál es el valor del límite?"
+  },
+  {
+    "objectID": "Actividades/Act05.html#problema-4",
+    "href": "Actividades/Act05.html#problema-4",
+    "title": "Actividad 05",
+    "section": "Problema 4",
+    "text": "Problema 4\nSe tiene la sucesión \\(s:\\mathbb{N}\\longrightarrow\\mathbb{R}\\) dada por\n\\[s(n)=1- \\frac{1}{n},\\;\\;\\forall\\,n\\geq1\\]\nEsta sucesión converge a \\(L = 1\\). Lo que significa que \\(\\forall \\varepsilon>0\\), \\(\\exists\\,N\\in\\mathbb{N}\\) tal que \\(\\forall\\,n>N\\) se tiene que \\(|s(n)-L|<\\varepsilon\\)1.\nLa desigualdad \\(|s(n)-L|<\\varepsilon\\) es equivalente a\n\\[L-\\varepsilon< s(n)<L+\\varepsilon\\]\nEs decir, los elementos (para \\(n>N\\)) de una sucesión convergente en \\(\\mathbb{R}\\) quedan acotados inferiormente y superiormente por las constantes \\(L-\\varepsilon\\) y \\(L+\\varepsilon\\) respectivamente.\nConstruimmos unas funciones en R para ilustrar esta geometría\n\nlibrary(plotly)\n\n\nsucesion <- function(x,y, epsilon = 0,limite = \"\"){\n  \n  datos <- data.frame(x=x, y = y)\n\n  fig <- plot_ly(datos, \n               x = ~x,\n               y = ~y, \n               name = \"f_n\",\n               type = 'scatter',\n               mode = 'lines+markers') %>%\n        layout(title = \"Gráfica de la sucesión\",\n               xaxis =  list(title =\"n\"))\n  hline <- function(y = 0, color = \"red\") {\n  list(\n    type = \"line\",\n    x0 = 0,\n    x1 = 1,\n    xref = \"paper\",\n    y0 = y,\n    y1 = y,\n    line = list(color = color,dash=\"dash\")\n  )\n}\n\n  if(limite!=\"\")\n    fig <- fig %>% layout(shapes = list(hline(limite-epsilon),hline(limite+epsilon)))\n\n  return(fig)\n}\n\nLos arguementos de la función sucesion son:\n\nn el dominio qeu es una secuencia de numeros natuarales a elegir\ny el resultado de cada evaluación del dominio\nepsilon el valor de epsilón elegido\nlimite el límite de la sucesión\n\nLa función sucesion gráfica la sucesión y las cotas inferior y superior (lineas rojas). Por ejemplo, para \\(\\varepsilon = 0.15\\) se tiene\n\nf <- function(n) return(1-1/n)\n\nn <- 1:20\ny <- f(n)\nsucesion(n,y,0.15,1)\n\n\n\n\n\n4.1 De acuerdo a la gráfica anterior ¿cuál es el valor de \\(N\\in\\mathbb{N}\\) mínimo que satisface la definición de convergencia para el valor de \\(\\varepsilon\\) elegido?\n4.2 Utiliza nuevamente la función sucesion pero ahora con el valor \\(\\varepsilon=0.01\\) (posiblemente sea necesario mover el valor de n) y contesta la pregunta anterior para este caso\n4.3 Dado un \\(\\varepsilon>0\\) ¿Cómo se debe de elegir \\(N\\in\\mathbb{N}\\) para satisfacer al definición de convergencia?\n4.4 En el problema 4.1 se escribio: …\\(N\\in\\mathbb{N}\\) mínimo… ¿Que sucede sino se aclara la cualidad de mínimo?"
+  },
+  {
+    "objectID": "Actividades/Act05.html#problema-5",
+    "href": "Actividades/Act05.html#problema-5",
+    "title": "Actividad 05",
+    "section": "Problema 5",
+    "text": "Problema 5\nAlgunos autores definen la función métrica mediante cuatro propiedades y algunos otros mediante tres propiedades ¿A quién le hacemos caso 🥲?\nDemuestra que para una métrica \\(d:X\\times X\\longrightarrow\\mathbb{R}_+\\) la propiedad\n\\[d(x,y)\\geq0\\]\nEs una consecuencia de las otras tres propiedades. Entonces con tres propiedades basta para definir una métrica 😊"
+  },
+  {
+    "objectID": "Actividades/Act05.html#instrucciones-de-entrega",
+    "href": "Actividades/Act05.html#instrucciones-de-entrega",
+    "title": "Actividad 05",
+    "section": "Instrucciones de entrega",
+    "text": "Instrucciones de entrega\nForma\n\nTodos los integrantes cargan el mismo trabajo\nEl formato de entrega es: problema-solución, en orden ascendente.\nSe anota el enunciado completo del problema\nEl formato de entrega es libre (imágenes, tablet, etc.).\nLa actividad debe ser desplegada en one-note. Si la actividad no es visible dentro de one-note, no se revisa.\n\nFondo\nLo ideal es entregar con notación matemática la solución de cada problema. Pero si aún se complica la notación, puedes redactar, pero siempre considera entregar la mayor notación posible."
+  },
+  {
     "objectID": "Actividades/Act06.html",
     "href": "Actividades/Act06.html",
     "title": "Actividad 06",
