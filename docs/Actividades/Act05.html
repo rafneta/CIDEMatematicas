@@ -204,6 +204,11 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
   <a href="../Laboratorios/Lab3.html" class="sidebar-item-text sidebar-link">Laboratorio 3</a>
   </div>
 </li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Laboratorios/Lab4.html" class="sidebar-item-text sidebar-link">Laboratorio 4</a>
+  </div>
+</li>
       </ul>
   </li>
         <li class="sidebar-item sidebar-item-section">
@@ -242,6 +247,11 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../Actividades/Act06.html" class="sidebar-item-text sidebar-link">Actividad 06</a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../Actividades/Act07.html" class="sidebar-item-text sidebar-link">Actividad 07</a>
   </div>
 </li>
       </ul>
@@ -316,7 +326,7 @@ x_{n+1}=\frac{1}{2}\left(x_n+\frac{\alpha}{x_n}\right)
 \]</span></p>
 <p><span class="math inline">\(\forall\,n\geq1\)</span></p>
 <p><strong>3.1</strong> Utiliza los códigos del laboratorio 2 para construir gráficas de la sucesión (por lo menos 3 gráficas). Para cada gráfica elige los parámetros <span class="math inline">\(\alpha\)</span> y <span class="math inline">\(x_1\)</span>, de tal manera que ayuden a contestar las siguientes preguntas</p>
-<p><strong>3.2</strong> ¿La sucesión es creciente o decreciente?</p>
+<p><strong>3.2</strong> ¿La sucesión es creciente, decreciente o no tiene un comportamiento monótono?</p>
 <p><strong>3.3</strong> ¿La sucesión converge? De ser así, ¿cuál es el valor del límite?</p>
 </section>
 <section id="problema-4" class="level2">
@@ -362,9 +372,9 @@ x_{n+1}=\frac{1}{2}\left(x_n+\frac{\alpha}{x_n}\right)
 <span id="cb2-28"><a href="#cb2-28" aria-hidden="true" tabindex="-1"></a>  <span class="fu">return</span>(fig)</span>
 <span id="cb2-29"><a href="#cb2-29" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<p>Los arguementos de la función <em>sucesion</em> son:</p>
+<p>Los argumentos de la función <em>sucesion</em> son:</p>
 <ul>
-<li><strong>n</strong> el dominio qeu es una secuencia de numeros natuarales a elegir</li>
+<li><strong>n</strong> el dominio que es una secuencia de números naturales a elegir</li>
 <li><strong>y</strong> el resultado de cada evaluación del dominio</li>
 <li><strong>epsilon</strong> el valor de epsilón elegido</li>
 <li><strong>limite</strong> el límite de la sucesión</li>
@@ -377,14 +387,14 @@ x_{n+1}=\frac{1}{2}\left(x_n+\frac{\alpha}{x_n}\right)
 <span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>y <span class="ot">&lt;-</span> <span class="fu">f</span>(n)</span>
 <span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a><span class="fu">sucesion</span>(n,y,<span class="fl">0.15</span>,<span class="dv">1</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
-<div id="htmlwidget-5b2b1e6c4bdc6845906c" style="width:100%;height:464px;" class="plotly html-widget"></div>
-<script type="application/json" data-for="htmlwidget-5b2b1e6c4bdc6845906c">{"x":{"visdat":{"1305834121fa3":["function () ","plotlyVisDat"]},"cur_data":"1305834121fa3","attrs":{"1305834121fa3":{"x":{},"y":{},"mode":"lines+markers","name":"f_n","alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"scatter"}},"layout":{"margin":{"b":40,"l":60,"t":25,"r":10},"title":"Gráfica de la sucesión","xaxis":{"domain":[0,1],"automargin":true,"title":"n"},"shapes":[{"type":"line","x0":0,"x1":1,"xref":"paper","y0":0.85,"y1":0.85,"line":{"color":"red","dash":"dash"}},{"type":"line","x0":0,"x1":1,"xref":"paper","y0":1.15,"y1":1.15,"line":{"color":"red","dash":"dash"}}],"yaxis":{"domain":[0,1],"automargin":true,"title":"y"},"hovermode":"closest","showlegend":false},"source":"A","config":{"modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false},"data":[{"x":[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20],"y":[0,0.5,0.666666666666667,0.75,0.8,0.833333333333333,0.857142857142857,0.875,0.888888888888889,0.9,0.909090909090909,0.916666666666667,0.923076923076923,0.928571428571429,0.933333333333333,0.9375,0.941176470588235,0.944444444444444,0.947368421052632,0.95],"mode":"lines+markers","name":"f_n","type":"scatter","marker":{"color":"rgba(31,119,180,1)","line":{"color":"rgba(31,119,180,1)"}},"error_y":{"color":"rgba(31,119,180,1)"},"error_x":{"color":"rgba(31,119,180,1)"},"line":{"color":"rgba(31,119,180,1)"},"xaxis":"x","yaxis":"y","frame":null}],"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.2,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-bcfce0926d4889a35b5b" style="width:100%;height:464px;" class="plotly html-widget"></div>
+<script type="application/json" data-for="htmlwidget-bcfce0926d4889a35b5b">{"x":{"visdat":{"7eb46f47032d":["function () ","plotlyVisDat"]},"cur_data":"7eb46f47032d","attrs":{"7eb46f47032d":{"x":{},"y":{},"mode":"lines+markers","name":"f_n","alpha_stroke":1,"sizes":[10,100],"spans":[1,20],"type":"scatter"}},"layout":{"margin":{"b":40,"l":60,"t":25,"r":10},"title":"Gráfica de la sucesión","xaxis":{"domain":[0,1],"automargin":true,"title":"n"},"shapes":[{"type":"line","x0":0,"x1":1,"xref":"paper","y0":0.85,"y1":0.85,"line":{"color":"red","dash":"dash"}},{"type":"line","x0":0,"x1":1,"xref":"paper","y0":1.15,"y1":1.15,"line":{"color":"red","dash":"dash"}}],"yaxis":{"domain":[0,1],"automargin":true,"title":"y"},"hovermode":"closest","showlegend":false},"source":"A","config":{"modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false},"data":[{"x":[1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20],"y":[0,0.5,0.666666666666667,0.75,0.8,0.833333333333333,0.857142857142857,0.875,0.888888888888889,0.9,0.909090909090909,0.916666666666667,0.923076923076923,0.928571428571429,0.933333333333333,0.9375,0.941176470588235,0.944444444444444,0.947368421052632,0.95],"mode":"lines+markers","name":"f_n","type":"scatter","marker":{"color":"rgba(31,119,180,1)","line":{"color":"rgba(31,119,180,1)"}},"error_y":{"color":"rgba(31,119,180,1)"},"error_x":{"color":"rgba(31,119,180,1)"},"line":{"color":"rgba(31,119,180,1)"},"xaxis":"x","yaxis":"y","frame":null}],"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.2,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
 <p><strong>4.1</strong> De acuerdo a la gráfica anterior ¿cuál es el valor de <span class="math inline">\(N\in\mathbb{N}\)</span> mínimo que satisface la definición de convergencia para el valor de <span class="math inline">\(\varepsilon\)</span> elegido?</p>
 <p><strong>4.2</strong> Utiliza nuevamente la función <em>sucesion</em> pero ahora con el valor <span class="math inline">\(\varepsilon=0.01\)</span> (posiblemente sea necesario mover el valor de <em>n</em>) y contesta la pregunta anterior para este caso</p>
 <p><strong>4.3</strong> Dado un <span class="math inline">\(\varepsilon&gt;0\)</span> ¿Cómo se debe de elegir <span class="math inline">\(N\in\mathbb{N}\)</span> para satisfacer al definición de convergencia?</p>
-<p><strong>4.4</strong> En el problema <strong>4.1</strong> se escribió: <em>…<span class="math inline">\(N\in\mathbb{N}\)</span> mínimo…</em> ¿Que sucede sino se aclara la cualidad de <em>mínimo</em>?</p>
+<p><strong>4.4</strong> En el problema <strong>4.1</strong> se escribió: <em>…<span class="math inline">\(N\in\mathbb{N}\)</span> mínimo…</em> ¿Qué sucede sino se aclara la cualidad de <em>mínimo</em>?</p>
 </section>
 <section id="problema-5" class="level2">
 <h2 class="anchored" data-anchor-id="problema-5">Problema 5</h2>
