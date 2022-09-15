@@ -196,6 +196,69 @@
     "text": "Instrucciones de entrega\nForma\n\nTodos los integrantes cargan el mismo trabajo\nEl formato de entrega es: problema-solución, en orden ascendente.\nSe anota el enunciado completo del problema\nEl formato de entrega es libre (imágenes, tablet, etc.).\nLa actividad debe ser desplegada en one-note. Si la actividad no es visible dentro de one-note, no se revisa.\n\nFondo\nLo ideal es entregar con notación matemática la solución de cada problema. Pero si aún se complica la notación, puedes redactar, pero siempre considera entregar la mayor notación posible."
   },
   {
+    "objectID": "Actividades/Act08.html",
+    "href": "Actividades/Act08.html",
+    "title": "Actividad 08",
+    "section": "",
+    "text": "Objetivo: Realizar ejercicios sobre Tema 1 y Tema 2.\nTipo de trabajo: Equipos (dos o tres personas)."
+  },
+  {
+    "objectID": "Actividades/Act08.html#problema-1",
+    "href": "Actividades/Act08.html#problema-1",
+    "title": "Actividad 08",
+    "section": "Problema 1",
+    "text": "Problema 1\nSea \\(\\alpha>1\\). En \\((\\mathbb{R},|\\cdot|)\\), definamos la sucesión \\(\\left\\{x_n\\right\\}_{n \\geq 1} \\subseteq \\mathbb{R}\\) de la siguiente manera:\n\\[\nx_{n+1}=\\frac{x_n+\\alpha}{x_n+1}\n\\]\nSe ha demostrado que si \\(x_1>\\sqrt{\\alpha}\\), la sucesión converge a \\(\\sqrt{\\alpha}\\). Un ejemplo geométrico de como se generan los elementos de la sucesión para \\(\\alpha = 81\\) y \\(x_1 = 17.86\\), se muestra en la siguiente aplicación\n\n\nPero, ¿qué sucede si \\(0\\leq x_1\\leq\\sqrt{\\alpha}\\)?\n1.1 Reliza por lo menos dos simulaciones (puedes apoyarte de los códigos del Laboratorio 2), elige los valores de \\(\\alpha\\) y en cada caso \\(x_1 = \\sqrt{\\alpha}\\), ¿Cual es tu conjetura respecto al valor de convergencia?\n1.2 Demuestra tu conjetura\n1.3 Realiza una construcción geométrica de como se generan los elementos de la sucesión, similar a la que se muestra arriba, si \\(\\alpha = 81\\) y \\(x_1 = 4\\). Puedes utilizar el software de tu preferencia o puedes realizarlo a mano. Muestra la construcción hasta \\(x_7\\).\n1.4 Reliza por lo menos dos simulaciones (puedes apoyarte de los códigos del Laboratorio 2), elige los valores de \\(\\alpha\\) y en cada caso \\(0\\leq x_1<\\sqrt{\\alpha}\\), ¿Cual es tu conjetura respecto al valor de convergencia?\n1.5 Demuestra tu conjetura"
+  },
+  {
+    "objectID": "Actividades/Act08.html#problema-2",
+    "href": "Actividades/Act08.html#problema-2",
+    "title": "Actividad 08",
+    "section": "Problema 2",
+    "text": "Problema 2\nResuelve el problema 15 de la Lista 2 (sección de Problemas)"
+  },
+  {
+    "objectID": "Actividades/Act08.html#problema-3",
+    "href": "Actividades/Act08.html#problema-3",
+    "title": "Actividad 08",
+    "section": "Problema 3",
+    "text": "Problema 3\nResuelve el problema 17 de la Lista 2 (sección de Problemas)"
+  },
+  {
+    "objectID": "Actividades/Act08.html#problema-4",
+    "href": "Actividades/Act08.html#problema-4",
+    "title": "Actividad 08",
+    "section": "Problema 4",
+    "text": "Problema 4\nResuelve el problema 19 de la Lista 2 (sección de Problemas)"
+  },
+  {
+    "objectID": "Actividades/Act08.html#instrucciones-de-entrega",
+    "href": "Actividades/Act08.html#instrucciones-de-entrega",
+    "title": "Actividad 08",
+    "section": "Instrucciones de entrega",
+    "text": "Instrucciones de entrega\nForma\n\nTodos los integrantes cargan el mismo trabajo\nEl formato de entrega es: problema-solución, en orden ascendente.\nSe anota el enunciado completo del problema\nEl formato de entrega es libre (imágenes, tablet, etc.).\nLa actividad debe ser desplegada en one-note. Si la actividad no es visible dentro de one-note, no se revisa.\n\nFondo\nLo ideal es entregar con notación matemática la solución de cada problema. Pero si aún se complica la notación, puedes redactar, pero siempre considera entregar la mayor notación posible."
+  },
+  {
+    "objectID": "Actividades/Act09.html",
+    "href": "Actividades/Act09.html",
+    "title": "Actividad 09",
+    "section": "",
+    "text": "Objetivo: Realizar ejercicios sobre Tema 1 y Tema 2.\nTipo de trabajo: Individual"
+  },
+  {
+    "objectID": "Actividades/Act09.html#examen",
+    "href": "Actividades/Act09.html#examen",
+    "title": "Actividad 09",
+    "section": "Examen",
+    "text": "Examen\nEl examen del Tema 1 y lo que va del Tema 2, se realiza en la segunda hora del Laboratorio 5"
+  },
+  {
+    "objectID": "Actividades/Act09.html#instrucciones-de-entrega",
+    "href": "Actividades/Act09.html#instrucciones-de-entrega",
+    "title": "Actividad 09",
+    "section": "Instrucciones de entrega",
+    "text": "Instrucciones de entrega\nForma\n\nSe entrega en orden ascendente, indicando el número o inciso correspondiente.\nEl formato de entrega es libre (imágenes, tablet, etc.).\nLa actividad debe ser desplegada en one-note. Si la actividad no es visible dentro de one-note, no se revisa.\n\nFondo\nLo ideal es entregar con notación matemática la solución de cada problema. Pero si aún se complica la notación, puedes redactar, pero siempre considera entregar la mayor notación posible."
+  },
+  {
     "objectID": "Problemas.html",
     "href": "Problemas.html",
     "title": "Problemas",
@@ -341,6 +404,34 @@
     "title": "Laboratorio 2",
     "section": "Códigos",
     "text": "Códigos\n\nNormas\nEn general, sea \\(1 \\leq p <\\infty\\). Se define la norma \\(p\\) en \\(\\mathbb{R}^n\\) por:\n\\[\n\\mathcal{N}_p(\\vec{x})=\\|\\vec{x}\\|_p=\\left\\{\\sum_{i=1}^n\\left|x_i\\right|^p\\right\\}^{1 / p}\n\\]\nY par \\(p = \\infty\\) se define la norma infinita se define como\n\\[\n\\|\\vec{x}\\|_{\\infty}=\\max \\left\\{\\left|x_1\\right|,\\left|x_2\\right|, \\ldots,\\left|x_n\\right|\\right\\}\n\\]\nSe pueden realizr gráficas para \\(\\mathbb{R}^2\\), pues en ese caso \\(\\mathcal{N}_p:\\mathbb{R}^2\\longrightarrow \\mathbb{R}^+\\)\n\nlibrary(plot3D)\nlibrary(plotly)\n\n\nd <- function(p){\n\nM <- mesh(seq(-1, 1, length.out = 100),seq(-1, 1, length.out = 100))\nx <- M$x\ny <- M$y\n\nif(p == \"inf\")\n{\n  z <-  pmax(abs(x),abs(y))\n}\nelse{\nz <-  (abs(x) ^p +   abs(y) **p)**(1/p)\n}\n#surf3D(x, y, z, colvar = z, colkey = TRUE, \n#       box = TRUE, bty = \"b\", phi = 20, theta = 120)\n\nfig <- plot_ly(x=x,y=y,z = z) %>% add_surface() \n\n\nreturn(fig)\n}\n\nNorma uno\n\nd(1)\n\n\n\n\n\nNorma uno punto cinco\n\nd(1.5)\n\n\n\n\n\nNorma dos\n\nd(2)\n\n\n\n\n\nNorma diez\n\nd(10)\n\n\n\n\n\nNorma infinito\n\nd(\"inf\")\n\n\n\n\n\nCurvas de nivel\n\n\n\n\nSucesiones\n\nlibrary(plotly)\n\n\nsec <- function(num) return(seq(1,num)) \n\nf1 <- function(n) return(1/n)\n\n\nsucesion <- function(x,y, limite = \"\"){\n  \n  datos <- data.frame(x=x, y = y)\n\n  fig <- plot_ly(datos, \n               x = ~x,\n               y = ~y, \n               name = \"f_t\",\n               type = 'scatter',\n               mode = 'lines+markers') %>%\n        layout(title = \"Gráfica de la sucesión\",\n               xaxis =  list(title =\"n\"))\n  hline <- function(y = 0, color = \"black\") {\n  list(\n    type = \"line\",\n    x0 = 0,\n    x1 = 1,\n    xref = \"paper\",\n    y0 = y,\n    y1 = y,\n    line = list(color = color)\n  )\n}\n\n  if(limite!=\"\")\n    fig <- fig %>% layout(shapes = list(hline(limite)))\n\n  return(fig)\n}\n\nEjemplo\nSea la sucesión \\(\\left\\{\\frac{1}{n}\\right\\}\\), gráfica la sucesión, considera que el límite es \\(0\\)\n\nn <- sec(10)\ny <- f1(n)\nsucesion(n,y,0)\n\n\n\n\n\nEjemplo\nSea la sucesión \\(s(n)=1- \\frac{1}{n}\\), gráfica la sucesión, considera que el límite es \\(1\\)\n\nf2 <- function(n) return(1-1/n)\n\nn <- sec(20)\ny <- f2(n)\nsucesion(n,y,1)\n\n\n\n\n\nEjemplo\nSea \\(\\alpha>1\\). En \\((\\mathbb{R},|\\cdot|)\\), definamos la sucesión \\(\\left\\{x_n\\right\\}_{n \\geq 1} \\subseteq \\mathbb{R}\\) de la siguiente manera: \\(x_1>\\sqrt{\\alpha}\\) y\n\\[\nx_{n+1}=\\frac{x_n+\\alpha}{x_n+1}\n\\]\nRealiza la gráfica para\n\n\\(\\alpha = 2\\)\n\\(\\alpha = 4\\)\n\\(\\alpha = 81\\)\n\nY una elección de \\(x_1\\) ¿A que calor converge la sucesión?\n\nf3 <- function(n,alpha,x1){\n  y <- x1\n  for(i in 2:n){\n    val <- (y[i-1] + alpha) / (y[i-1]+1)\n    y <- c(y,val)\n  }\n  \n  return(y)\n}\n\n\nn <- 20\nalpha <-2\nx1 <- 10\ny <- f3(n, alpha, x1)\nsucesion(1:n,y)\n\n\n\n\n\n\nn <- 20\nalpha <-4\nx1 <- 10\ny <- f3(n, alpha, x1)\nsucesion(1:n,y)\n\n\n\n\n\n\nn <- 30\nalpha <-81\nx1 <- 10\ny <- f3(n, alpha, x1)\nsucesion(1:n,y)\n\n\n\n\n\nLa sucesión converge a \\(\\sqrt{\\alpha}\\)\n\n\nRegresar a página de inicio ⏎"
+  },
+  {
+    "objectID": "Laboratorios/Lab5.html",
+    "href": "Laboratorios/Lab5.html",
+    "title": "Laboratorio 5",
+    "section": "",
+    "text": "Se describe el contenido del laboratorio. Es importante realizar el trabajo previo aunque este no tenga ponderación en la calificación."
+  },
+  {
+    "objectID": "Laboratorios/Lab5.html#trabajo-previo",
+    "href": "Laboratorios/Lab5.html#trabajo-previo",
+    "title": "Laboratorio 5",
+    "section": "Trabajo previo",
+    "text": "Trabajo previo\n📖 Anotar las dudas (si existen) de las clases previas a este laboratorio."
+  },
+  {
+    "objectID": "Laboratorios/Lab5.html#notas",
+    "href": "Laboratorios/Lab5.html#notas",
+    "title": "Laboratorio 5",
+    "section": "Notas",
+    "text": "Notas\n📋 Tema 2"
+  },
+  {
+    "objectID": "Laboratorios/Lab5.html#códigos",
+    "href": "Laboratorios/Lab5.html#códigos",
+    "title": "Laboratorio 5",
+    "section": "Códigos",
+    "text": "Códigos\n\nRegresar a página de inicio ⏎"
   },
   {
     "objectID": "Laboratorios/Lab4.html",
