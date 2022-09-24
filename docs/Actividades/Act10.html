@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>CIDE Matematicas - Actividad 07</title>
+<title>CIDE Matematicas - Actividad 10</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -24,8 +24,8 @@ ul.task-list{list-style: none;}
 <script src="../site_libs/quarto-search/fuse.min.js"></script>
 <script src="../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../">
-<link href="../Actividades/Act08.html" rel="next">
-<link href="../Actividades/Act06.html" rel="prev">
+<link href="../Problemas.html" rel="next">
+<link href="../Actividades/Act09.html" rel="prev">
 <script src="../site_libs/quarto-html/quarto.js"></script>
 <script src="../site_libs/quarto-html/popper.min.js"></script>
 <script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -58,8 +58,8 @@ ul.task-list{list-style: none;}
   <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 <link rel="stylesheet" href="../styles.css">
-<meta name="twitter:title" content="CIDE Matematicas - Actividad 07">
-<meta name="twitter:description" content="Objetivo: Realizar ejercicios sobre Tema 1 y Tema 2.">
+<meta name="twitter:title" content="CIDE Matematicas - Actividad 10">
+<meta name="twitter:description" content="Objetivo: Realizar ejercicios sobre Tema 2.">
 <meta name="twitter:creator" content="@minebocek">
 <meta name="twitter:card" content="summary">
 </head>
@@ -70,7 +70,7 @@ ul.task-list{list-style: none;}
   <header id="quarto-header" class="headroom fixed-top">
   <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
     <div class="container-fluid d-flex justify-content-between">
-      <h1 class="quarto-secondary-nav-title">Actividad 07</h1>
+      <h1 class="quarto-secondary-nav-title">Actividad 10</h1>
       <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
         <i class="bi bi-chevron-right"></i>
       </button>
@@ -185,7 +185,7 @@ ul.task-list{list-style: none;}
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../Actividades/Act07.html" class="sidebar-item-text sidebar-link active">Actividad 07</a>
+  <a href="../Actividades/Act07.html" class="sidebar-item-text sidebar-link">Actividad 07</a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -200,7 +200,7 @@ ul.task-list{list-style: none;}
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../Actividades/Act10.html" class="sidebar-item-text sidebar-link">Actividad 10</a>
+  <a href="../Actividades/Act10.html" class="sidebar-item-text sidebar-link active">Actividad 10</a>
   </div>
 </li>
       </ul>
@@ -238,7 +238,7 @@ ul.task-list{list-style: none;}
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title d-none d-lg-block">Actividad 07</h1>
+<h1 class="title d-none d-lg-block">Actividad 10</h1>
 </div>
 
 
@@ -253,48 +253,82 @@ ul.task-list{list-style: none;}
 </header>
 
 <hr>
-<p><strong>Objetivo:</strong> Realizar ejercicios sobre Tema 1 y Tema 2.</p>
+<p><strong>Objetivo:</strong> Realizar ejercicios sobre Tema 2.</p>
 <p><strong>Tipo de trabajo:</strong> Equipos (dos o tres personas).</p>
 <hr>
 <section id="problema-1" class="level2">
 <h2 class="anchored" data-anchor-id="problema-1">Problema 1</h2>
-<p>En el Laboratorio 3, se propuso al conjunto <span class="math inline">\(A=\left\{a,b,c,d\right\}\)</span> y se construyo una relación de orden parcial <span class="math inline">\(R\)</span>. Con esta relación, se construyo a un conjunto <span class="math inline">\(B\subset A\)</span> de tal forma que era acotado superiormente pero no inferiormente. Se tiene el siguiente resultado</p>
-<div class="def">
-<strong>Teorema</strong> <em></em>
-<p>
-Cualquier subconjunto finito <span class="math inline">\(X\)</span> de un conjunto parcialmente ordenado contiene elemento maximal y minimal
-</p>
+<p><strong>1.1</strong> ¿Qué son y para que sirven los métodos numéricos?</p>
+<p><strong>1.2</strong> Si se tiene una función <span class="math inline">\(f:\mathbb{R}\rightarrow\mathbb{R}\)</span>, y se quiere resolver el problema,</p>
+<p><span id="eq-ssr"><span class="math display">\[f(x) = 0 \tag{1}\]</span></span></p>
+<p>surgen varios aspectos a comentar:</p>
+<ol type="1">
+<li>Puede pasar que el problema no tenga solución.</li>
+<li>Puede suceder que si exista solución, pero que no se cuente con un método para encontrar la solución</li>
+<li>Puede pasar que el problema tenga solución y exista un método para encontrar la solución.</li>
+</ol>
+<p>Bajo el segundo escenario, el método de bisección es una forma de resolver el problema de la <a href="#eq-ssr">Equation&nbsp;1</a>. Este método es aplicable bajo ciertas condiciones de la función<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>, pero no es el único método.</p>
+<p>Investiga sobre el método numérico de punto fijo. En esta investigación, es necesario presentar bajo que condiciones este método puede ser aplicable para resolver la <a href="#eq-ssr">Equation&nbsp;1</a>, puedes incluir gráficas, resultados (teoremas, lemas), ejemplos, etc.</p>
+<p>Los siguientes videos (lista de reproducción de 5 videos) pueden ser de ayuda</p>
+<div data-align="center">
+<iframe width="100%" height="415" src="https://www.youtube.com/embed/videoseries?list=PLSC7gO5dTNPfo8wqmcdP9sozgroSeW2vx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="">
+</iframe>
 </div>
-<p><strong>1.1</strong> Encuentra un elemento mínimal de <span class="math inline">\(B\)</span></p>
-<p><strong>1.2</strong> Encuentra un elemento máximal de <span class="math inline">\(B\)</span></p>
 </section>
 <section id="problema-2" class="level2">
 <h2 class="anchored" data-anchor-id="problema-2">Problema 2</h2>
-<p><strong>2.1</strong> Investiga que es una <em>latiice</em> (en el contexto de conjuntos parcialmente ordenados). Escribe la definición.</p>
-<p><strong>2.2</strong> Sea <span class="math inline">\(J = \mathbb{Z}_{++}\)</span>, donde <span class="math inline">\(xRy\)</span> si <span class="math inline">\(x\)</span> divide a <span class="math inline">\(y\)</span>, i. e., <span class="math inline">\(\exists k\in\mathbb{Z}_{++}\)</span> tal que <span class="math inline">\(y = kx\)</span>.</p>
+<p><strong>2.1</strong> Realiza un código en R que implemente el algoritmo de bisección (puedes apoyarte de los códigos de los laboratorios correspondientes).</p>
+<p>Este código debe considerar como elementos de entrada</p>
 <ul>
-<li><strong>2.2.1</strong> Muestra que <span class="math inline">\((J,R)\)</span> es un conjunto parcialmente ordenado</li>
-<li><strong>2.2.2</strong> Muestra que <span class="math inline">\((J,R)\)</span> es una lattice</li>
+<li>La función <span class="math inline">\(f\)</span> para la aproximación de una raíz</li>
+<li>El intervalo de búsqueda inicial <span class="math inline">\([a,b]\)</span></li>
+<li>El número <span class="math inline">\(n\)</span> de elementos a generar para la sucesión <span class="math inline">\(\{p_n\}\)</span></li>
+<li>Una tolerancia <span class="math inline">\(\epsilon&gt;0\)</span>, este número servirá como una medida del intervalo de búsqueda, si el intervalo de búsqueda tendrá un longitud menor a la indicada en la tolerancia, el programa deja de genrar los elementos de la sucesión.</li>
+</ul>
+<p>Este código debe considerar como elementos de salida.</p>
+<ul>
+<li>El valor aproximado de la raiz, que será último elemento generado.</li>
+<li>La grafica de la sucesión <span class="math inline">\(\{p_n\}\)</span></li>
+<li>La gráfica de la función <span class="math inline">\(f\)</span> en el intervalo inicial de busqueda.</li>
+</ul>
+<p><strong>2.2</strong> Con el código anterior resuelve el problema</p>
+<ul>
+<li><span class="math inline">\(f(x) = cos(x)-x\)</span></li>
+<li><span class="math inline">\([-1,3]\)</span></li>
+<li><span class="math inline">\(n=100\)</span></li>
+<li><span class="math inline">\(\epsilon=0.0001\)</span></li>
 </ul>
 </section>
 <section id="problema-3" class="level2">
 <h2 class="anchored" data-anchor-id="problema-3">Problema 3</h2>
-<p>Sea <span class="math inline">\(X\)</span> un un conjunto no vacío. Se define</p>
-<p><span class="math display">\[\mathcal{C}=\left\{f:X\longrightarrow[0,1]\subset\mathbb{R}\,\middle |\, f\mbox{ es función}\right\}\]</span></p>
-<p>Decimos que <span class="math inline">\(f,g\in\mathcal{C}\)</span><a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> están relacionados, <span class="math inline">\(fRg\)</span>, si <span class="math inline">\(f(x)\leq g(x)\;\forall x\in{X}\)</span>.</p>
+<p><strong>3.1</strong> Realiza un código en R que implemente el algoritmo de punto fijo (puedes apoyarte de los códigos de los laboratorios correspondientes).</p>
+<p>Considera como elementos de entrada, los datos que se especifican en el video dos del problema 1.</p>
+<p>Considera como elementos de salida los mismos del problema 2.2</p>
+<p><strong>3.2</strong> Con el código anterior resuelve el problema</p>
 <ul>
-<li><strong>3.1</strong> Muestra que <span class="math inline">\((\mathcal{C},R)\)</span> es un conjunto parcialmente ordenado</li>
-<li><strong>3.2</strong> Muestra que <span class="math inline">\((\mathcal{C},R)\)</span> es una lattice. Las siguientes <a href="https://www.desmos.com/calculator/p8zpslukd5?lang=es">gráficas</a> para <span class="math inline">\(X\subset\mathbb{R}\)</span> pueden ayudar</li>
-<li><strong>3.2</strong> Muestra que en particular <span class="math inline">\((\mathcal{C},R)\)</span> es una <em>lattice completa con cero y uno</em>. Este <a href="https://rafneta.github.io/CN/R/R01.html">documento</a> puede ser de ayuda</li>
+<li><span class="math inline">\(f(x) = cos(x)-x\)</span></li>
+<li><span class="math inline">\(p_0\)</span> de tu elección</li>
+<li><span class="math inline">\(n=100\)</span></li>
+<li><span class="math inline">\(\epsilon=0.0001\)</span></li>
 </ul>
 </section>
 <section id="problema-4" class="level2">
 <h2 class="anchored" data-anchor-id="problema-4">Problema 4</h2>
-<p>Resuelve el problema 12 de la Lista 2 (sección de Problemas)</p>
+<p>Los problemas relativos al dinero necesario para pagar una hipoteca de una casa durante un periodo fijo de tiempo requieren la fórmula</p>
+<p><span class="math display">\[A=\frac{P}{i}\left[1-(1+i)^{-n}\right]\]</span></p>
+<p>denominada ecuación de la anualidad ordinaria. En esta ecuación, <span class="math inline">\(A\)</span> es el importe de la hipoteca, <span class="math inline">\(P\)</span> es el importe de cada pago e <span class="math inline">\(i\)</span> es la tasa de interés por periodo para <span class="math inline">\(n\)</span> periodos. Supongamos que se necesita una hipoteca de 135000 dólares por una casa a 30 años y que los pagos máximos que puede realizar el cliente son de 1000 dólares mensuales. ¿Cuál será el interés más alto que podrá pagar?</p>
+<p><strong>4.1</strong> Argumenta porqué es aplicable o no el algoritmo de bisección. En caso de ser aplicable resuelve el problema con ayuda de tu código.</p>
+<p><strong>4.2</strong> Argumenta porqué es aplicable o no el algoritmo de punto fijo. En caso de ser aplicable resuelve el problema con ayuda de tu código.</p>
 </section>
 <section id="problema-5" class="level2">
 <h2 class="anchored" data-anchor-id="problema-5">Problema 5</h2>
-<p>Resuelve el problema 13 de la Lista 2 (sección de Problemas)</p>
+<p>Se tiene el problema</p>
+<p><span class="math display">\[x^2+x-6 = 0\]</span></p>
+<p>Es claro que este problema tiene solución y existe un procedimiento para encontrar la solución. En ocasiones a pesar de tener una solución analítica de un problema, se elige utilizar un método numérico para “aproximar” la solución de un problema, pues se mejora en eficiencia computacional o definitivamente es una necesidad.</p>
+<p><strong>5.1</strong> Argumenta porqué es aplicable o no el algoritmo de bisección. En caso de ser aplicable resuelve el problema con ayuda de tu código.</p>
+<p><strong>5.2</strong> Argumenta porqué es aplicable o no el algoritmo de punto fijo. En caso de ser aplicable resuelve el problema con ayuda de tu código.</p>
+<hr>
+<p><strong>Nota:</strong> En el siguiente <a href="https://drive.google.com/file/d/1PizSLYGvaHlsDhICEuLAgK0X41Mc5z7f/view?usp=sharing">enlace</a> se puede encontrar material para estudiar métodos númericos</p>
 </section>
 <section id="instrucciones-de-entrega" class="level2">
 <h2 class="anchored" data-anchor-id="instrucciones-de-entrega">Instrucciones de entrega</h2>
@@ -316,7 +350,7 @@ Cualquier subconjunto finito <span class="math inline">\(X\)</span> de un conjun
 <div id="quarto-appendix" class="default"><section class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
 
 <ol>
-<li id="fn1" role="doc-endnote"><p>Los elementos de <span class="math inline">\(\mathcal{C}\)</span> son llamados <strong>conjuntos difusos</strong><a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn1" role="doc-endnote"><p>Nuestro objeto de interés son los resultados teóricos para asegurar la solución del problema, es este caso, la aplicación del teorema del valor intermedio y la definición de una sucesión convergente.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 </ol>
 </section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -418,13 +452,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="../Actividades/Act06.html" class="pagination-link">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Actividad 06</span>
+      <a href="../Actividades/Act09.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Actividad 09</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="../Actividades/Act08.html" class="pagination-link">
-        <span class="nav-page-text">Actividad 08</span> <i class="bi bi-arrow-right-short"></i>
+      <a href="../Problemas.html" class="pagination-link">
+        <span class="nav-page-text">Problemas</span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

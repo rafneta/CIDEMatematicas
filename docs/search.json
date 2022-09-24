@@ -49,6 +49,55 @@
     "text": "Objetivo: Tener disponible un ambiente para la ejecución de R.\nTipo de trabajo: Individual\n\nRevisa el siguiente video, para que tengas una perspectiva general de R, en caso que no la tengas.\n\n\n\n\n\nR es un lenguaje gratuito para computación estadística (Linux, MacOS, Windows)\n1991 creado por Ross Ihaka y Robert Gentleman, en 1993 se anuncia la primer versión pública\n1995 se convierte en software gratuito.\nEs la versión no comercial de S, desarrollado por John Chambers y otros en Bell Labs (1976), inicialmente programado en Fortran, en 1988 se escribe en C, 1998 sale la versión 4.\nAyuda en la red\nVersiones anuales\n“Menos amigable que MATLAB pero más que C++ y Fortran”\n“I have written software professionally in perhaps a dozen programming languages, and the hardest language for me to learn has been R,” writes consultant John D. Cook\n\n\nInstalación local\nEn el orden inidicado\n\nInstalar R\nInstalar RStudio\n\nRStudio\n\nConsole window (command window)\nEditor Window\nHistory, Environment\nFiles, Plots, Package\nDocumentación de RStudio\n\n\n\n\nVentanas de R\n\n\nSe supone que se tienen una interfaz para programar en R\nDirectorio de trabajo y ayuda\n\nDirectorio de trabajo comando\n\n\ngetwd() # obtiene la carpeta en la cual se esta trabajando\nsetwd(\"~/Dropbox/UNAM/Econometria\")\nsetwd(\"C:/Sharon/Documents/RProjects\")\ndir() #despliega los archivos del directorio\n\n\nDirectorio de trabajo con ambiente gráfico Session-Set Working Directory\nAyuda en console\n\n\nhelp.start()\nhelp(matrix) # aplica también para funciones\n?matrix # aplica también para funciones \napropos(\"matrix\") \nexample(\"matrix\")\nargs(rnorm) # conocer los argumentos de una función\n\n\nAyuda en la web\n\nhttps://rseek.org/\n\nComentarios\n\n\n# Ignorado por el programa, por linea\n\n\nLibrerías disponibles\n\n\nlibrary()\n\n\nInstalar paquetes, actualizar\n\n\nupdate.packages() # Actualizar todos los paquetes\ninstall.packages(\"mcsm\")\nupdate.packages(\"mcsm\")\n\n\nCargar libreria disponible\n\n\nlibrary(MASS)\nlibrary(coda)\nlibrary(mcsm)\n\n\n\nUso de R en colab\nSe puede utilizar R en colab de google. Para ello se tienen por lo menos dos alternativas\n\nEjecutar una celda de colab la instrucción\n%load_ext rpy2.ipython\n\nY posteriormente utilizar al principio de cada celda de código el comando mágico %%R. Por ejemplo\n%%R\nx <- seq(0, 2*pi, length.out=50)\nx\nEsto permite la ejecución simultanea de Python y R en el mismo notebook. El siguiente notebook muestra este ejemplo\n\nEntrar a la siguiente dirección https://colab.to/r (posteriormente mover el archivo desde Drive a la ubicación deseada). Directamente se puede comenzar a trabajar con R. El siguiente colab de ejemplo se construye de esa manera.\n\nAl hacer uso de este ambiente se tienen algunas limitaciones y problemas. Puede consultarse el post How to Use R with Google Colab Notebook para ver como instalar paquetes.\n\n\nUso del repositorio\nPuede utilizarse el siguiente servicio creado con binder. Es necesario estar atento de la sesión, si no se descarga el trabajo o se tiene mucho tiempo inactivo, se pueden perder los avances\n\n\nOtras alternativas\n\nKaggle\nRStudio Cloud\nEn general servicios en la nube\n\n\n\nInstrucciones de entrega\n\nRealiza una instalación local de R, puedes apoyarte de los enlaces de la sección correspondiere o de un video de instalación que encuentres en la red\nRealiza un impresión de pantalla que muestre la instalación de R y RStudio\nCarga en el lugar correspondiente de la plataforma la imagen generada."
   },
   {
+    "objectID": "Actividades/Act10.html",
+    "href": "Actividades/Act10.html",
+    "title": "Actividad 10",
+    "section": "",
+    "text": "Objetivo: Realizar ejercicios sobre Tema 2.\nTipo de trabajo: Equipos (dos o tres personas)."
+  },
+  {
+    "objectID": "Actividades/Act10.html#problema-1",
+    "href": "Actividades/Act10.html#problema-1",
+    "title": "Actividad 10",
+    "section": "Problema 1",
+    "text": "Problema 1\n1.1 ¿Qué son y para que sirven los métodos numéricos?\n1.2 Si se tiene una función \\(f:\\mathbb{R}\\rightarrow\\mathbb{R}\\), y se quiere resolver el problema,\n\\[f(x) = 0 \\tag{1}\\]\nsurgen varios aspectos a comentar:\n\nPuede pasar que el problema no tenga solución.\nPuede suceder que si exista solución, pero que no se cuente con un método para encontrar la solución\nPuede pasar que el problema tenga solución y exista un método para encontrar la solución.\n\nBajo el segundo escenario, el método de bisección es una forma de resolver el problema de la Equation 1. Este método es aplicable bajo ciertas condiciones de la función1, pero no es el único método.\nInvestiga sobre el método numérico de punto fijo. En esta investigación, es necesario presentar bajo que condiciones este método puede ser aplicable para resolver la Equation 1, puedes incluir gráficas, resultados (teoremas, lemas), ejemplos, etc.\nLos siguientes videos (lista de reproducción de 5 videos) pueden ser de ayuda"
+  },
+  {
+    "objectID": "Actividades/Act10.html#problema-2",
+    "href": "Actividades/Act10.html#problema-2",
+    "title": "Actividad 10",
+    "section": "Problema 2",
+    "text": "Problema 2\n2.1 Realiza un código en R que implemente el algoritmo de bisección (puedes apoyarte de los códigos de los laboratorios correspondientes).\nEste código debe considerar como elementos de entrada\n\nLa función \\(f\\) para la aproximación de una raíz\nEl intervalo de búsqueda inicial \\([a,b]\\)\nEl número \\(n\\) de elementos a generar para la sucesión \\(\\{p_n\\}\\)\nUna tolerancia \\(\\epsilon>0\\), este número servirá como una medida del intervalo de búsqueda, si el intervalo de búsqueda tendrá un longitud menor a la indicada en la tolerancia, el programa deja de genrar los elementos de la sucesión.\n\nEste código debe considerar como elementos de salida.\n\nEl valor aproximado de la raiz, que será último elemento generado.\nLa grafica de la sucesión \\(\\{p_n\\}\\)\nLa gráfica de la función \\(f\\) en el intervalo inicial de busqueda.\n\n2.2 Con el código anterior resuelve el problema\n\n\\(f(x) = cos(x)-x\\)\n\\([-1,3]\\)\n\\(n=100\\)\n\\(\\epsilon=0.0001\\)"
+  },
+  {
+    "objectID": "Actividades/Act10.html#problema-3",
+    "href": "Actividades/Act10.html#problema-3",
+    "title": "Actividad 10",
+    "section": "Problema 3",
+    "text": "Problema 3\n3.1 Realiza un código en R que implemente el algoritmo de punto fijo (puedes apoyarte de los códigos de los laboratorios correspondientes).\nConsidera como elementos de entrada, los datos que se especifican en el video dos del problema 1.\nConsidera como elementos de salida los mismos del problema 2.2\n3.2 Con el código anterior resuelve el problema\n\n\\(f(x) = cos(x)-x\\)\n\\(p_0\\) de tu elección\n\\(n=100\\)\n\\(\\epsilon=0.0001\\)"
+  },
+  {
+    "objectID": "Actividades/Act10.html#problema-4",
+    "href": "Actividades/Act10.html#problema-4",
+    "title": "Actividad 10",
+    "section": "Problema 4",
+    "text": "Problema 4\nLos problemas relativos al dinero necesario para pagar una hipoteca de una casa durante un periodo fijo de tiempo requieren la fórmula\n\\[A=\\frac{P}{i}\\left[1-(1+i)^{-n}\\right]\\]\ndenominada ecuación de la anualidad ordinaria. En esta ecuación, \\(A\\) es el importe de la hipoteca, \\(P\\) es el importe de cada pago e \\(i\\) es la tasa de interés por periodo para \\(n\\) periodos. Supongamos que se necesita una hipoteca de 135000 dólares por una casa a 30 años y que los pagos máximos que puede realizar el cliente son de 1000 dólares mensuales. ¿Cuál será el interés más alto que podrá pagar?\n4.1 Argumenta porqué es aplicable o no el algoritmo de bisección. En caso de ser aplicable resuelve el problema con ayuda de tu código.\n4.2 Argumenta porqué es aplicable o no el algoritmo de punto fijo. En caso de ser aplicable resuelve el problema con ayuda de tu código."
+  },
+  {
+    "objectID": "Actividades/Act10.html#problema-5",
+    "href": "Actividades/Act10.html#problema-5",
+    "title": "Actividad 10",
+    "section": "Problema 5",
+    "text": "Problema 5\nSe tiene el problema\n\\[x^2+x-6 = 0\\]\nEs claro que este problema tiene solución y existe un procedimiento para encontrar la solución. En ocasiones a pesar de tener una solución analítica de un problema, se elige utilizar un método numérico para “aproximar” la solución de un problema, pues se mejora en eficiencia computacional o definitivamente es una necesidad.\n5.1 Argumenta porqué es aplicable o no el algoritmo de bisección. En caso de ser aplicable resuelve el problema con ayuda de tu código.\n5.2 Argumenta porqué es aplicable o no el algoritmo de punto fijo. En caso de ser aplicable resuelve el problema con ayuda de tu código.\n\nNota: En el siguiente enlace se puede encontrar material para estudiar métodos númericos"
+  },
+  {
+    "objectID": "Actividades/Act10.html#instrucciones-de-entrega",
+    "href": "Actividades/Act10.html#instrucciones-de-entrega",
+    "title": "Actividad 10",
+    "section": "Instrucciones de entrega",
+    "text": "Instrucciones de entrega\nForma\n\nTodos los integrantes cargan el mismo trabajo\nEl formato de entrega es: problema-solución, en orden ascendente.\nSe anota el enunciado completo del problema\nEl formato de entrega es libre (imágenes, tablet, etc.).\nLa actividad debe ser desplegada en one-note. Si la actividad no es visible dentro de one-note, no se revisa.\n\nFondo\nLo ideal es entregar con notación matemática la solución de cada problema. Pero si aún se complica la notación, puedes redactar, pero siempre considera entregar la mayor notación posible."
+  },
+  {
     "objectID": "Actividades/Act04.html",
     "href": "Actividades/Act04.html",
     "title": "Actividad 04",
