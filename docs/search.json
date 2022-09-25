@@ -168,6 +168,55 @@
     "text": "Instrucciones de entrega\nForma\n\nTodos los integrantes cargan el mismo trabajo\nEl formato de entrega es: problema-solución, en orden ascendente.\nSe anota el enunciado completo del problema\nEl formato de entrega es libre (imágenes, tablet, etc.).\nLa actividad debe ser desplegada en one-note. Si la actividad no es visible dentro de one-note, no se revisa.\n\nFondo\nLo ideal es entregar con notación matemática la solución de cada problema. Pero si aún se complica la notación, puedes redactar, pero siempre considera entregar la mayor notación posible."
   },
   {
+    "objectID": "Actividades/Act11.html",
+    "href": "Actividades/Act11.html",
+    "title": "Actividad 11",
+    "section": "",
+    "text": "Objetivo: Realizar ejercicios sobre Tema 3.\nTipo de trabajo: Equipos (dos o tres personas)."
+  },
+  {
+    "objectID": "Actividades/Act11.html#problema-1",
+    "href": "Actividades/Act11.html#problema-1",
+    "title": "Actividad 11",
+    "section": "Problema 1",
+    "text": "Problema 1\nResuelve el problema 2 de la Lista 3 (sección de Problemas)"
+  },
+  {
+    "objectID": "Actividades/Act11.html#problema-2",
+    "href": "Actividades/Act11.html#problema-2",
+    "title": "Actividad 11",
+    "section": "Problema 2",
+    "text": "Problema 2\nResuelve el problema 3 de la Lista 3 (sección de Problemas)"
+  },
+  {
+    "objectID": "Actividades/Act11.html#problema-3",
+    "href": "Actividades/Act11.html#problema-3",
+    "title": "Actividad 11",
+    "section": "Problema 3",
+    "text": "Problema 3\nSe tiene la siguiente función \\(E:\\mathbb{R}^2\\longrightarrow\\mathbb{R}\\)\n\\[E(\\beta_o,\\beta_1) = \\sum_{i=1}^n\\left(y_i-(\\beta_0+\\beta_1x_i)\\right)^2\\]\ntanto \\(x_i\\) como \\(y_i\\) se consideran conocidos \\(\\forall i\\)\n3.1 Encuentra las derivadas parciales de \\(E\\)\n3.2 Encuentra la función derivada \\(DE:\\mathbb{R}^2\\longrightarrow\\mathcal{M}_{1\\times 2}({\\mathbb{R}})\\) de \\(E\\) (sugerencia: argumenta porque puedes utilizar el inciso anterior)\n3.3 Encuentra \\(\\hat{\\beta}=(\\hat\\beta_0.\\hat\\beta_1)\\) tal que \\(DE(\\hat\\beta)=0_{1\\times2}\\)"
+  },
+  {
+    "objectID": "Actividades/Act11.html#problema-4",
+    "href": "Actividades/Act11.html#problema-4",
+    "title": "Actividad 11",
+    "section": "Problema 4",
+    "text": "Problema 4"
+  },
+  {
+    "objectID": "Actividades/Act11.html#problema-5",
+    "href": "Actividades/Act11.html#problema-5",
+    "title": "Actividad 11",
+    "section": "Problema 5",
+    "text": "Problema 5"
+  },
+  {
+    "objectID": "Actividades/Act11.html#instrucciones-de-entrega",
+    "href": "Actividades/Act11.html#instrucciones-de-entrega",
+    "title": "Actividad 11",
+    "section": "Instrucciones de entrega",
+    "text": "Instrucciones de entrega\nForma\n\nTodos los integrantes cargan el mismo trabajo\nEl formato de entrega es: problema-solución, en orden ascendente.\nSe anota el enunciado completo del problema\nEl formato de entrega es libre (imágenes, tablet, etc.).\nLa actividad debe ser desplegada en one-note. Si la actividad no es visible dentro de one-note, no se revisa.\n\nFondo\nLo ideal es entregar con notación matemática la solución de cada problema. Pero si aún se complica la notación, puedes redactar, pero siempre considera entregar la mayor notación posible."
+  },
+  {
     "objectID": "Actividades/Act07.html",
     "href": "Actividades/Act07.html",
     "title": "Actividad 07",
@@ -473,14 +522,14 @@
     "href": "Laboratorios/Lab6.html#notas",
     "title": "Laboratorio 6",
     "section": "Notas",
-    "text": "Notas\n📋 [Tema 3]"
+    "text": "Notas\n📋 Tema 3"
   },
   {
     "objectID": "Laboratorios/Lab6.html#códigos",
     "href": "Laboratorios/Lab6.html#códigos",
     "title": "Laboratorio 6",
     "section": "Códigos",
-    "text": "Códigos\n\nRegresar a página de inicio ⏎"
+    "text": "Códigos\n\n\nDerivación simbólica en R\n\nlibrary(Deriv)\n\n\nDeriv(\"sin(x)\")\n\n[1] \"cos(x)\"\n\n\n\nf <- function(x) sin(x)\nDf <- Deriv(f)\nDf\n\nfunction (x) \ncos(x)\n\n\n\nDf(pi)\n\n[1] -1\n\n\nRecta tangente\n\nrec_tan <- function(f,x_0){\n  fp <- Deriv(f)\n  fpe <-fp(x_0)\n  \n  rectan <- function(x){\n    return(fpe*(x-x_0)+f(x_0))\n  }\n  \n  return(rectan)\n}\n\n\nrt <- rec_tan(f,pi) # Regresa la recta tangente como función\nrt(1)\n\n[1] 2.141593\n\n\nFunción para gráfica\n\nlibrary(plotly)\n\n\ngrafica2d <- function(x,y,xp=\"\",yp=\"\"){\n  \n  datos <- data.frame(x=x, y = y)\n\n  fig <- plot_ly(datos, \n               x = ~x,\n               y = ~y, \n               name = \"f_t\",\n               type = 'scatter',\n               mode = 'lines') %>%\n        layout(title = \"Gráfica de la función\",\n               xaxis =  list(title =\"x\"))\n  \n  if(xp[1] != \"\"){\n    datos1 <- data.frame(xp = xp,yp=yp)\n    fig <- fig %>% add_trace(data = datos1, \n               x = ~xp,\n               y = ~yp, \n               name = \"Recta tangente\",\n               type = 'scatter',\n               mode = 'lines',\n               opacity = 1) %>%\n        layout(title = \"Gráfica de la función y recta tangente\")\n    \n  }\n\n  return(fig)\n}\n\n\nx <- seq(from = -10, to = 15, by=0.01 )\ny <- f(x)\ngrafica2d(x,y)\n\n\n\n\n\n\nx <- seq(from = -10, to = 15, by=0.01 )\ny <- f(x)\nx_0 <- 2\n\nrt <- rec_tan(f,x_0)\nxp <- seq(from = x_0-1, to = x_0+1, by=0.01 )\nyp <- rt(xp)\n  \ngrafica2d(x,y,xp,yp)\n\n\n\n\n\nFunciones de varias variables\n\nf <- function(x, y) sin(x) * y\nDf <- Deriv(f)\nDf\n\nfunction (x, y) \nc(x = y * cos(x), y = sin(x))\n\nDf(pi/2,1)\n\n           x            y \n6.123234e-17 1.000000e+00 \n\nDf(pi,0)\n\n           x            y \n0.000000e+00 1.224647e-16 \n\nDf(1,1)\n\n        x         y \n0.5403023 0.8414710 \n\n\n\nDfx <- Deriv(f,\"x\")\nDfx\n\nfunction (x, y) \ny * cos(x)\n\nDfx(2,4)\n\n[1] -1.664587\n\n\n\nDfy <- Deriv(f,\"y\")\nDfy\n\nfunction (x, y) \nsin(x)\n\nDfy(2)\n\n[1] 0.9092974\n\nDfy(2,19)\n\n[1] 0.9092974\n\n\n\nf <- function(x, y, z) sin(x) * y + z ^ 2\nDf <- Deriv(f)\nDf \n\nfunction (x, y, z) \nc(x = y * cos(x), y = sin(x), z = 2 * z)\n\n\nSi bien la biblioteca stats cuenta con su funciòn para derivar, la sintaxis es más complicada\n\nder <- D(expression(x+sin(x)),\"x\")\nder\n\n1 + cos(x)\n\n\nTambien se puede utilizar deriv\n\nder <- deriv(~x+sin(x),\"x\")\nder\n\nexpression({\n    .value <- x + sin(x)\n    .grad <- array(0, c(length(.value), 1L), list(NULL, c(\"x\")))\n    .grad[, \"x\"] <- 1 + cos(x)\n    attr(.value, \"gradient\") <- .grad\n    .value\n})\n\n\nSe puede activar el argumento de función\n\nder <- deriv(~x+sin(x),\"x\", function.arg = TRUE)\nder\n\nfunction (x) \n{\n    .value <- x + sin(x)\n    .grad <- array(0, c(length(.value), 1L), list(NULL, c(\"x\")))\n    .grad[, \"x\"] <- 1 + cos(x)\n    attr(.value, \"gradient\") <- .grad\n    .value\n}\n\nder(pi/2)\n\n[1] 2.570796\nattr(,\"gradient\")\n     x\n[1,] 1\n\n\n\nder <- deriv(~ x*cos(y),c(\"x\",\"y\"))\nder\n\nexpression({\n    .expr1 <- cos(y)\n    .value <- x * .expr1\n    .grad <- array(0, c(length(.value), 2L), list(NULL, c(\"x\", \n        \"y\")))\n    .grad[, \"x\"] <- .expr1\n    .grad[, \"y\"] <- -(x * sin(y))\n    attr(.value, \"gradient\") <- .grad\n    .value\n})\n\n\n\nder <- deriv(~ x*cos(y),c(\"x\",\"y\"),function.arg = TRUE)\nder\n\nfunction (x, y) \n{\n    .expr1 <- cos(y)\n    .value <- x * .expr1\n    .grad <- array(0, c(length(.value), 2L), list(NULL, c(\"x\", \n        \"y\")))\n    .grad[, \"x\"] <- .expr1\n    .grad[, \"y\"] <- -(x * sin(y))\n    attr(.value, \"gradient\") <- .grad\n    .value\n}\n\nder(1,pi)\n\n[1] -1\nattr(,\"gradient\")\n      x             y\n[1,] -1 -1.224647e-16\n\n\nSi se revisa la documentación de deriv se observa que están implementadas\nD(expr, name)\nderiv(expr, ...)\nderiv3(expr, ...)\nentre otras cosas se tiene acceso al siguiente código, que es una funci`pn que realiza la derivación de una variable del orden deseado\n\nDD <- function(expr, name, order = 1) {\n   if(order < 1) stop(\"'order' must be >= 1\")\n   if(order == 1) D(expr, name)\n   else DD(D(expr, name), name, order - 1)\n}\n\n\nDD(expression(sin(x^2)), \"x\", 3)\n\n-(sin(x^2) * (2 * x) * 2 + ((cos(x^2) * (2 * x) * (2 * x) + sin(x^2) * \n    2) * (2 * x) + sin(x^2) * (2 * x) * 2))\n\n\n\nderiv3(y ~ b0 + b1 * 2^(-x/th), c(\"b0\", \"b1\", \"th\"))\n\nexpression({\n    .expr3 <- 2^(-x/th)\n    .expr6 <- log(2)\n    .expr7 <- th^2\n    .expr9 <- .expr6 * (x/.expr7)\n    .expr10 <- .expr3 * .expr9\n    .value <- b0 + b1 * .expr3\n    .grad <- array(0, c(length(.value), 3L), list(NULL, c(\"b0\", \n        \"b1\", \"th\")))\n    .hessian <- array(0, c(length(.value), 3L, 3L), list(NULL, \n        c(\"b0\", \"b1\", \"th\"), c(\"b0\", \"b1\", \"th\")))\n    .grad[, \"b0\"] <- 1\n    .grad[, \"b1\"] <- .expr3\n    .hessian[, \"b1\", \"b1\"] <- 0\n    .hessian[, \"b1\", \"th\"] <- .hessian[, \"th\", \"b1\"] <- .expr10\n    .grad[, \"th\"] <- b1 * .expr10\n    .hessian[, \"th\", \"th\"] <- b1 * (.expr10 * .expr9 - .expr3 * \n        (.expr6 * (x * (2 * th)/.expr7^2)))\n    attr(.value, \"gradient\") <- .grad\n    attr(.value, \"hessian\") <- .hessian\n    .value\n})\n\n\n\nRegresar a página de inicio ⏎"
   },
   {
     "objectID": "Laboratorios/Lab5.html",
