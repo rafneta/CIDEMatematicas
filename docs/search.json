@@ -193,21 +193,21 @@
     "href": "Actividades/Act11.html#problema-3",
     "title": "Actividad 11",
     "section": "Problema 3",
-    "text": "Problema 3\nSe tiene la siguiente función \\(E:\\mathbb{R}^2\\longrightarrow\\mathbb{R}\\)\n\\[E(\\beta_o,\\beta_1) = \\sum_{i=1}^n\\left(y_i-(\\beta_0+\\beta_1x_i)\\right)^2\\]\ntanto \\(x_i\\) como \\(y_i\\) se consideran conocidos \\(\\forall i\\)\n3.1 Encuentra las derivadas parciales de \\(E\\)\n3.2 Encuentra la función derivada \\(DE:\\mathbb{R}^2\\longrightarrow\\mathcal{M}_{1\\times 2}({\\mathbb{R}})\\) de \\(E\\) (sugerencia: argumenta porque puedes utilizar el inciso anterior)\n3.3 Encuentra \\(\\hat{\\beta}=(\\hat\\beta_0.\\hat\\beta_1)\\) tal que \\(DE(\\hat\\beta)=0_{1\\times2}\\)"
+    "text": "Problema 3\nSe tiene la siguiente función \\(E:\\mathbb{R}^2\\longrightarrow\\mathbb{R}\\)\n\\[E(\\beta_o,\\beta_1) = \\sum_{i=1}^n\\left(y_i-(\\beta_0+\\beta_1x_i)\\right)^2\\]\ntanto \\(x_i\\) como \\(y_i\\) se consideran conocidos \\(\\forall i\\)\n3.1 Encuentra las derivadas parciales de \\(E\\)\n3.2 Encuentra la función derivada \\(DE:\\mathbb{R}^2\\longrightarrow\\mathcal{M}_{1\\times 2}({\\mathbb{R}})\\) de \\(E\\) (sugerencia: argumenta porque puedes utilizar el inciso anterior)\n3.3 Encuentra \\(\\hat{\\beta}=(\\hat\\beta_0.\\hat\\beta_1)\\) tal que \\(DE(\\hat\\beta)=0_{1\\times2}\\) (se dice que \\(\\hat\\beta\\) es un punto crítico de \\(E\\))\n3.4 Encuentra el Hessiano \\(H\\), de la función \\(E\\), ¿La función \\(E\\) es de clase \\(\\mathscr{C}^2\\)?\nSe tienen los siguientes resultados\n\nSi \\(x_0\\) es un punto crítico de una función \\(f\\), tal que \\(D^2f(x_0)\\) es positiva definida, entonces \\(f\\) tiene un mínimo local en \\(x_0\\).\nSi una función bilineal simétrica tiene matriz asociada\n\n\\[\nA=\\left(\\begin{array}{cccc}\na_{11} & a_{12} & \\cdots & a_{1 n} \\\\\na_{21} & a_{22} & \\cdots & a_{2 n} \\\\\n\\vdots & \\vdots & \\vdots & \\vdots \\\\\na_{n 1} & a_{n 2} & \\cdots & a_{n n}\n\\end{array}\\right), \\quad a_{i j}=a_{j i}\n\\]\nentonces es definida positiva sí y solo si \\(\\operatorname{det}(A_k)>0\\) para toda \\(k =1,\\ldots,n\\) donde\n\\[\nA_k=\\left(\\begin{array}{cccc}\na_{11} & a_{12} & \\cdots & a_{1 k} \\\\\na_{21} & a_{22} & \\cdots & a_{2 k} \\\\\n\\vdots & \\vdots & \\vdots & \\vdots \\\\\na_{k 1} & a_{k 2} & \\cdots & a_{k k}\n\\end{array}\\right)\n\\]\n3.5 Con los resultados anteriores concluye que la función \\(E\\) tiene un mínimo en \\(\\hat\\beta\\)"
   },
   {
     "objectID": "Actividades/Act11.html#problema-4",
     "href": "Actividades/Act11.html#problema-4",
     "title": "Actividad 11",
     "section": "Problema 4",
-    "text": "Problema 4"
+    "text": "Problema 4\nResuelve el problema 11 de la Lista 3 (sección de Problemas)"
   },
   {
     "objectID": "Actividades/Act11.html#problema-5",
     "href": "Actividades/Act11.html#problema-5",
     "title": "Actividad 11",
     "section": "Problema 5",
-    "text": "Problema 5"
+    "text": "Problema 5\nResuelve el problema 13 de la Lista 3 (sección de Problemas)"
   },
   {
     "objectID": "Actividades/Act11.html#instrucciones-de-entrega",
@@ -627,7 +627,7 @@
     "href": "Laboratorios/Lab8.html#trabajo-previo",
     "title": "Laboratorio 8",
     "section": "Trabajo previo",
-    "text": "Trabajo previo\n📖 Anotar las dudas (si existen) de las clases previas a este laboratorio.\nRevisar las notas de conjuntos convexos de la siguiente lista de reporducción. En particular en los videos …. de al iista, se muestra la solución de los problemas"
+    "text": "Trabajo previo\n📖 Anotar las dudas (si existen) de las clases previas a este laboratorio.\nRevisar las notas de conjuntos convexos de la siguiente lista de reporducción. En particular en los videos se muestra la solución de los siguientes problemas de la lista 4: 1 c), 2, 6, 8, 14"
   },
   {
     "objectID": "Laboratorios/Lab8.html#notas",
