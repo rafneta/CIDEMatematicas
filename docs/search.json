@@ -462,6 +462,34 @@
     "text": "Libros\n\nCálculo infinitesimal de varias variables reales\nAnálisis matemático"
   },
   {
+    "objectID": "Laboratorios/Lab10.html",
+    "href": "Laboratorios/Lab10.html",
+    "title": "Laboratorio 10",
+    "section": "",
+    "text": "Se describe el contenido del laboratorio. Es importante realizar el trabajo previo aunque este no tenga ponderación en la calificación."
+  },
+  {
+    "objectID": "Laboratorios/Lab10.html#trabajo-previo",
+    "href": "Laboratorios/Lab10.html#trabajo-previo",
+    "title": "Laboratorio 10",
+    "section": "Trabajo previo",
+    "text": "Trabajo previo\n📖 Anotar las dudas (si existen) de las clases previas a este laboratorio.\n📖 Revisar las notas de conjuntos convexos de la siguiente lista de reproducción. En particular en los videos se muestra la solución de los siguientes problemas de la lista 4: 1 c), 2, 6, 8, 14"
+  },
+  {
+    "objectID": "Laboratorios/Lab10.html#notas",
+    "href": "Laboratorios/Lab10.html#notas",
+    "title": "Laboratorio 10",
+    "section": "Notas",
+    "text": "Notas\n📋 Tema 4"
+  },
+  {
+    "objectID": "Laboratorios/Lab10.html#códigos",
+    "href": "Laboratorios/Lab10.html#códigos",
+    "title": "Laboratorio 10",
+    "section": "Códigos",
+    "text": "Códigos\n\nRegresar a página de inicio ⏎"
+  },
+  {
     "objectID": "Laboratorios/Lab1.html",
     "href": "Laboratorios/Lab1.html",
     "title": "Laboratorio 1",
@@ -649,6 +677,34 @@
     "title": "Laboratorio 4",
     "section": "Códigos",
     "text": "Códigos\nEjemplo:\nSea \\(\\alpha>1\\). En \\((\\mathbb{R},|\\cdot|)\\), definamos la sucesión \\(\\left\\{x_n\\right\\}_{n \\geq 1} \\subseteq \\mathbb{R}\\) de la siguiente manera: \\(x_1>\\sqrt{\\alpha}\\) y\n\\[\nx_{n+1}=\\frac{x_n+\\alpha}{x_n+1}\n\\]\n\n\nVisualización de rangos y gráficas de sucesiones\n\nlibrary(plotly)\nlibrary(misc3d)\n\n\nsucesion_rango <- function(x,y,z=\"\",epsilon=0.05,limite = 0){\n  \n  if(z[1]==\"\"){\n    datos <- data.frame(x=x, y = y)\n  circulo <- function(limite,epsilon=0.2) {\n  list(\n    type = 'circle',\n    xref = 'x', x0 = limite[1]-epsilon, x1 = limite[1]+epsilon,\n    yref = 'y', y0 = limite[2]-epsilon, y1 = limite[2]+epsilon,\n    fillcolor = 'rgb(47,145,180)',\n    line = list(color = 'rgb(47,145,180)'),\n    opacity = 0.2\n    )\n  }\n  }\n  else\n    datos <- data.frame(x=x, y = y, z = z)\n\n   \n\n  \n  if(z[1]==\"\"){\n  fig <- plot_ly(datos, \n               x = ~x,\n               y = ~y, \n               name = \"s_n\",\n               type = 'scatter',\n               mode = 'markers',\n               color = 'orange') %>%\n        layout(title = \"Gráfica rango\",\n               xaxis =  list(title =\"x\"))\n  \n  if((limite!=0)[1])\n    fig <- fig %>% layout(\n      shapes = list(circulo(limite,epsilon)),\n      xaxis = list(rangemode = \"tozero\"),\n      yaxis=list(scaleanchor=\"x\",\n                 scaleratio=1,\n                 rangemode = \"tozero\")\n      )\n  }\n  \n  else{\n    \n    f <- function(x, y, z){\n      x^2 + y^2 + z^2}\n    \n    R <- epsilon # radius\n    x <- y <- z <- seq(-R, R, length.out = 100) \n    g <- expand.grid(x = x, y = y, z = z)\n    voxel <- array(with(g, f(x, y, z)), dim = c(100, 100, 100))\n    cont <- computeContour3d(voxel, level = R^2, x = x, y = y, z = z)\n    idx <- matrix(0:(nrow(cont)-1), ncol=3, byrow=TRUE)\n    \n    fig<- plot_ly(\n      x = cont[, 1]+limite[1], y = cont[, 2]+limite[2], z = cont[, 3]+limite[3],\n      i = idx[, 1], j = idx[, 2], k = idx[, 3],\n      type = \"mesh3d\",\n      opacity = 0.2) \n    \n    fig <- fig %>% add_trace(data = datos, \n               x = ~x,\n               y = ~y, \n               z = ~z,\n               name = \"s_n\",\n               type = 'scatter3d',\n               opacity = 1,\n               color = \"red\",\n               mode = 'markers') %>%\n        layout(title = \"Gráfica rango\",\n               xaxis =  list(title =\"x\"))\n  }\n\n  \n\n  return(fig)\n}\n\nEjemplo:\nGráfica del rango de \\[s(n)= \\left(1-\\frac{1}{n},\\left(1+\\frac{1}{n}\\right)^n\\right)\\]\n\nn <- 1:30\nx <- 1-1/n\ny <- (1 +1/n) ** n\nsucesion_rango(x=x,y=y,epsilon= 0.3,limite=c(1,exp(1)))\n\n\n\n\n\nEjemplo:\nGráfica del rango de \\[s(n)= \\left(1-\\frac{1}{n},\\left(1+\\frac{1}{n}\\right)^n,1-\\frac{1}{n}\\right)\\]\n\nn <- 1:30\nx <- 1-1/n\ny <- (1 +1/n) ** n\nz <- 1-1/n\nsucesion_rango(x=x,y=y,z=z,epsilon= 0.1,limite=c(1,exp(1),1))\n\n\n\n\n\n\nsucesion <- function(x,y,z,epsilon=0.05,limite = 0){\n  \n   datos <- data.frame(x=x, y = y, z = z)\n   \n   circulo <- function(x,epsilon,limite){\n     \n     y1<- seq((-epsilon),(epsilon),by=0.0001)\n     z1 <- sqrt(epsilon**2-(y1)**2)+limite[2]\n     z2 <- -sqrt(epsilon**2-(y1)**2)+limite[2]\n     y <- c(y1+limite[1],y1+limite[1])\n     z <- c(z1,z2)\n     x <- rep(x,length(z))\n     dcir <- data.frame(x=x,y =y, z=z )\n     return(dcir)\n     }\n   \n   fig <- plot_ly(datos, \n               x = ~x,\n               y = ~y, \n               z = ~z,\n               name = \"s_n\",\n               type = 'scatter3d',\n               mode = 'markers') %>%\n        layout(title = \"Gráfica rango\",\n               xaxis =  list(title =\"x\"))\n    \n  for(i in x) \n  {\n    \n  da <- circulo(i,epsilon,limite)\n    \n  fig <- fig %>% add_trace(data = da,x~x,y~y,z~z, type = 'scatter3d',\n                           mode = 'lines',\n                           name = as.character(i)) \n  }\n   \n   \n  return(fig)\n}\n\nEjemplo:\nGráfica de la sucesión\n\\[s(n)= \\left(1-\\frac{1}{n},\\left(1+\\frac{1}{n}\\right)^n\\right)\\]\n\nn <- 1:100\ny <- 1-1/n\nz <- (1 +1/n) ** n\nsucesion(x=n,y=y,z=z,epsilon= 0.1,limite=c(1,exp(1)))\n\n\n\n\n\n\nRegresar a página de inicio ⏎"
+  },
+  {
+    "objectID": "Laboratorios/Lab9.html",
+    "href": "Laboratorios/Lab9.html",
+    "title": "Laboratorio 9",
+    "section": "",
+    "text": "Se describe el contenido del laboratorio. Es importante realizar el trabajo previo aunque este no tenga ponderación en la calificación."
+  },
+  {
+    "objectID": "Laboratorios/Lab9.html#trabajo-previo",
+    "href": "Laboratorios/Lab9.html#trabajo-previo",
+    "title": "Laboratorio 9",
+    "section": "Trabajo previo",
+    "text": "Trabajo previo"
+  },
+  {
+    "objectID": "Laboratorios/Lab9.html#notas",
+    "href": "Laboratorios/Lab9.html#notas",
+    "title": "Laboratorio 9",
+    "section": "Notas",
+    "text": "Notas\nSe realiza el primer examen"
+  },
+  {
+    "objectID": "Laboratorios/Lab9.html#códigos",
+    "href": "Laboratorios/Lab9.html#códigos",
+    "title": "Laboratorio 9",
+    "section": "Códigos",
+    "text": "Códigos\n\nRegresar a página de inicio ⏎"
   },
   {
     "objectID": "Laboratorios/Lab8.html",
