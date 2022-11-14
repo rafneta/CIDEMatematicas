@@ -49,6 +49,41 @@
     "text": "Objetivo: Tener disponible un ambiente para la ejecución de R.\nTipo de trabajo: Individual\n\nRevisa el siguiente video, para que tengas una perspectiva general de R, en caso que no la tengas.\n\n\n\n\n\nR es un lenguaje gratuito para computación estadística (Linux, MacOS, Windows)\n1991 creado por Ross Ihaka y Robert Gentleman, en 1993 se anuncia la primer versión pública\n1995 se convierte en software gratuito.\nEs la versión no comercial de S, desarrollado por John Chambers y otros en Bell Labs (1976), inicialmente programado en Fortran, en 1988 se escribe en C, 1998 sale la versión 4.\nAyuda en la red\nVersiones anuales\n“Menos amigable que MATLAB pero más que C++ y Fortran”\n“I have written software professionally in perhaps a dozen programming languages, and the hardest language for me to learn has been R,” writes consultant John D. Cook\n\n\nInstalación local\nEn el orden inidicado\n\nInstalar R\nInstalar RStudio\n\nRStudio\n\nConsole window (command window)\nEditor Window\nHistory, Environment\nFiles, Plots, Package\nDocumentación de RStudio\n\n\n\n\nVentanas de R\n\n\nSe supone que se tienen una interfaz para programar en R\nDirectorio de trabajo y ayuda\n\nDirectorio de trabajo comando\n\n\ngetwd() # obtiene la carpeta en la cual se esta trabajando\nsetwd(\"~/Dropbox/UNAM/Econometria\")\nsetwd(\"C:/Sharon/Documents/RProjects\")\ndir() #despliega los archivos del directorio\n\n\nDirectorio de trabajo con ambiente gráfico Session-Set Working Directory\nAyuda en console\n\n\nhelp.start()\nhelp(matrix) # aplica también para funciones\n?matrix # aplica también para funciones \napropos(\"matrix\") \nexample(\"matrix\")\nargs(rnorm) # conocer los argumentos de una función\n\n\nAyuda en la web\n\nhttps://rseek.org/\n\nComentarios\n\n\n# Ignorado por el programa, por linea\n\n\nLibrerías disponibles\n\n\nlibrary()\n\n\nInstalar paquetes, actualizar\n\n\nupdate.packages() # Actualizar todos los paquetes\ninstall.packages(\"mcsm\")\nupdate.packages(\"mcsm\")\n\n\nCargar libreria disponible\n\n\nlibrary(MASS)\nlibrary(coda)\nlibrary(mcsm)\n\n\n\nUso de R en colab\nSe puede utilizar R en colab de google. Para ello se tienen por lo menos dos alternativas\n\nEjecutar una celda de colab la instrucción\n%load_ext rpy2.ipython\n\nY posteriormente utilizar al principio de cada celda de código el comando mágico %%R. Por ejemplo\n%%R\nx <- seq(0, 2*pi, length.out=50)\nx\nEsto permite la ejecución simultanea de Python y R en el mismo notebook. El siguiente notebook muestra este ejemplo\n\nEntrar a la siguiente dirección https://colab.to/r (posteriormente mover el archivo desde Drive a la ubicación deseada). Directamente se puede comenzar a trabajar con R. El siguiente colab de ejemplo se construye de esa manera.\n\nAl hacer uso de este ambiente se tienen algunas limitaciones y problemas. Puede consultarse el post How to Use R with Google Colab Notebook para ver como instalar paquetes.\n\n\nUso del repositorio\nPuede utilizarse el siguiente servicio creado con binder. Es necesario estar atento de la sesión, si no se descarga el trabajo o se tiene mucho tiempo inactivo, se pueden perder los avances\n\n\nOtras alternativas\n\nKaggle\nRStudio Cloud\nEn general servicios en la nube\n\n\n\nInstrucciones de entrega\n\nRealiza una instalación local de R, puedes apoyarte de los enlaces de la sección correspondiere o de un video de instalación que encuentres en la red\nRealiza un impresión de pantalla que muestre la instalación de R y RStudio\nCarga en el lugar correspondiente de la plataforma la imagen generada."
   },
   {
+    "objectID": "Actividades/Act14.html",
+    "href": "Actividades/Act14.html",
+    "title": "Actividad 14",
+    "section": "",
+    "text": "Objetivo: Realizar ejercicios sobre Tema 5.\nTipo de trabajo: Equipos (dos o tres personas)."
+  },
+  {
+    "objectID": "Actividades/Act14.html#problema-1",
+    "href": "Actividades/Act14.html#problema-1",
+    "title": "Actividad 14",
+    "section": "Problema 1",
+    "text": "Problema 1\nResuelve el problema 6 de la Lista 5 (sección de Problemas)"
+  },
+  {
+    "objectID": "Actividades/Act14.html#problema-2",
+    "href": "Actividades/Act14.html#problema-2",
+    "title": "Actividad 14",
+    "section": "Problema 2",
+    "text": "Problema 2\nResuelve el problema 8 de la Lista 5 (sección de Problemas)"
+  },
+  {
+    "objectID": "Actividades/Act14.html#problema-3",
+    "href": "Actividades/Act14.html#problema-3",
+    "title": "Actividad 14",
+    "section": "Problema 3",
+    "text": "Problema 3\nResuelve el problema 9 de la Lista 5 (sección de Problemas)"
+  },
+  {
+    "objectID": "Actividades/Act14.html#instrucciones-de-entrega",
+    "href": "Actividades/Act14.html#instrucciones-de-entrega",
+    "title": "Actividad 14",
+    "section": "Instrucciones de entrega",
+    "text": "Instrucciones de entrega\nForma\n\nTodos los integrantes cargan el mismo trabajo\nEl formato de entrega es: problema-solución, en orden ascendente.\nSe anota el enunciado completo del problema\nEl formato de entrega es libre (imágenes, tablet, etc.).\nLa actividad debe ser desplegada en one-note. Si la actividad no es visible dentro de one-note, no se revisa.\n\nFondo\nLo ideal es entregar con notación matemática la solución de cada problema. Pero si aún se complica la notación, puedes redactar, pero siempre considera entregar la mayor notación posible."
+  },
+  {
     "objectID": "Actividades/Act10.html",
     "href": "Actividades/Act10.html",
     "title": "Actividad 10",
@@ -523,6 +558,27 @@
     "title": "Laboratorio 11",
     "section": "Notas",
     "text": "Notas\nSe realiza evaluación del tema 4\n\nRegresar a página de inicio ⏎"
+  },
+  {
+    "objectID": "Laboratorios/Lab12.html",
+    "href": "Laboratorios/Lab12.html",
+    "title": "Laboratorio 12",
+    "section": "",
+    "text": "Se describe el contenido del laboratorio. Es importante realizar el trabajo previo aunque este no tenga ponderación en la calificación."
+  },
+  {
+    "objectID": "Laboratorios/Lab12.html#trabajo-previo",
+    "href": "Laboratorios/Lab12.html#trabajo-previo",
+    "title": "Laboratorio 12",
+    "section": "Trabajo previo",
+    "text": "Trabajo previo\n📖 Anotar las dudas (si existen) de las clases previas a este laboratorio.\n📖 Revisar las notas de funciones concavas y covexas de la siguiente lista de reproducción. En particular en los videos se muestra la solución de los siguientes problemas de la lista 5: 4, 7, 11"
+  },
+  {
+    "objectID": "Laboratorios/Lab12.html#notas",
+    "href": "Laboratorios/Lab12.html#notas",
+    "title": "Laboratorio 12",
+    "section": "Notas",
+    "text": "Notas\n\nRegresar a página de inicio ⏎"
   },
   {
     "objectID": "Laboratorios/Lab1.html",
